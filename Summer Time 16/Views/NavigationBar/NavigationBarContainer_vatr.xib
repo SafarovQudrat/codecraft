@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kufam-Bold.ttf">
+            <string>Kufam-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBarContainer_vatr" customModule="Crafty_Craft_16" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgz-TW-Lfg">
+                    <rect key="frame" x="20" y="418.66666666666669" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="GcG-Ut-cQJ"/>
+                        <constraint firstAttribute="height" constant="40" id="Txk-jA-BZQ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="Settings Item_vatr"/>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvQ-vc-QCQ" userLabel="SearchButton">
+                    <rect key="frame" x="333" y="418.66666666666669" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="PD3-5E-qQJ"/>
+                        <constraint firstAttribute="height" constant="40" id="gw6-NK-otF"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="Search Item_vatr"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qav-Fb-O3S">
+                    <rect key="frame" x="72" y="59" width="249" height="759"/>
+                    <fontDescription key="fontDescription" name="Kufam-Bold" family="Kufam" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7se-um-cE9" customClass="SearchBarView_vatr" customModule="Crafty_Craft_16" customModuleProvider="target">
+                    <rect key="frame" x="16" y="406" width="361" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AvQ-vc-QCQ" firstAttribute="centerY" secondItem="Qav-Fb-O3S" secondAttribute="centerY" id="B5B-Es-lsf"/>
+                <constraint firstItem="AvQ-vc-QCQ" firstAttribute="leading" secondItem="Qav-Fb-O3S" secondAttribute="trailing" constant="12" id="B5R-3G-Fob"/>
+                <constraint firstItem="Qav-Fb-O3S" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WlE-x7-YUu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qav-Fb-O3S" secondAttribute="bottom" id="bJ9-uf-tjO"/>
+                <constraint firstItem="kgz-TW-Lfg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eM9-7t-2c3"/>
+                <constraint firstItem="Qav-Fb-O3S" firstAttribute="leading" secondItem="kgz-TW-Lfg" secondAttribute="trailing" constant="12" id="hwa-gw-prT"/>
+                <constraint firstItem="kgz-TW-Lfg" firstAttribute="centerY" secondItem="Qav-Fb-O3S" secondAttribute="centerY" id="oL4-ck-Mni"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AvQ-vc-QCQ" secondAttribute="trailing" constant="20" id="wa6-C6-96b"/>
+            </constraints>
+            <connections>
+                <outlet property="labelName" destination="Qav-Fb-O3S" id="YJl-3h-Zdv"/>
+                <outlet property="searchButton" destination="AvQ-vc-QCQ" id="zCG-2I-b0g"/>
+                <outlet property="settingsButton" destination="kgz-TW-Lfg" id="cLg-D8-3Bf"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="-60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Search Item_vatr" width="128" height="128"/>
+        <image name="Settings Item_vatr" width="128" height="128"/>
+    </resources>
+</document>

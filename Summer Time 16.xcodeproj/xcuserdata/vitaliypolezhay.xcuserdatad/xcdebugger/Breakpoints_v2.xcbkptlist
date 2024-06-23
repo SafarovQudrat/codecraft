@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A79DB9F8-F8F7-4251-8B2E-688F02355596"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66BD8166-6246-49BA-AE51-A71A8B320D72"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/SkinEditorViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "358"
+            endingLineNumber = "358"
+            landmarkName = "handleDeleteButtonTap_vatr(indexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB792125-BF74-42AB-B3C4-36232221279B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "514"
+            endingLineNumber = "514"
+            landmarkName = "performSkinDeletion_vatr(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FB792125-BF74-42AB-B3C4-36232221279B - 41dfce31938ef5d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "514"
+                  endingLineNumber = "514"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "FB792125-BF74-42AB-B3C4-36232221279B - e0d9d4f7808743ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "514"
+                  endingLineNumber = "514"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "FB792125-BF74-42AB-B3C4-36232221279B - e45987fdbffcc2d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "514"
+                  endingLineNumber = "514"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "FB792125-BF74-42AB-B3C4-36232221279B - 41dfce31938ef5d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "514"
+                  endingLineNumber = "514"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33CA4245-E9B5-4F31-ADE8-6E396D40DFF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "521"
+            endingLineNumber = "521"
+            landmarkName = "performSkinDeletion_vatr(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33CA4245-E9B5-4F31-ADE8-6E396D40DFF1 - e45987fdbffcc3be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "521"
+                  endingLineNumber = "521"
+                  offsetFromSymbolStart = "852">
+               </Location>
+               <Location
+                  uuid = "33CA4245-E9B5-4F31-ADE8-6E396D40DFF1 - 6c2d7975e61dd2c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 (Swift.Bool) -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "521"
+                  endingLineNumber = "521"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "33CA4245-E9B5-4F31-ADE8-6E396D40DFF1 - b90674b5d60d34eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 @Swift.MainActor () -&gt; () in closure #2 (Swift.Bool) -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "521"
+                  endingLineNumber = "521"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "33CA4245-E9B5-4F31-ADE8-6E396D40DFF1 - e45987fdbffcc3be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in Summer_Time_16.SkinCreatorMainVC_vatr.performSkinDeletion_vatr(at: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "521"
+                  endingLineNumber = "521"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "258ACE79-2448-43CB-AA68-F4E98E98ACF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/CreateTabViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "489"
+            endingLineNumber = "489"
+            landmarkName = "setupSearchBar_vatr2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "422B83DC-8BB1-4BB6-B08C-50F73C58A04A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/CreateTabViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
+            landmarkName = "setupSearchBar_vatr2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E78D70D1-7207-428A-8C21-F2973FFA1234"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/aefrgSkinEditorVCModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getSelectedSkinModel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "643699D7-15CD-4EB8-96FF-55DAFAC094AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/SkinCreatorMain/SkinCreatorMainVC_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "626"
+            endingLineNumber = "626"
+            landmarkName = "filterData(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4453C3C3-0FA4-4B73-8D80-474AD4855AAA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1175"
+            endingLineNumber = "1175"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4453C3C3-0FA4-4B73-8D80-474AD4855AAA - f0db01fb48f1ee4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SizesManager.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1175"
+                  endingLineNumber = "1175"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "4453C3C3-0FA4-4B73-8D80-474AD4855AAA - f0db01fb48f1ee4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SizesManager.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1175"
+                  endingLineNumber = "1175"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29BCF0B9-2E5B-4534-A2CD-BA14880ADAE1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
+            landmarkName = "paletteBtnTapped_vatr(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66CDE330-824D-46A3-8FCB-C9F30BDD61A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "916"
+            endingLineNumber = "916"
+            landmarkName = "setColor_vatr(color:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66CDE330-824D-46A3-8FCB-C9F30BDD61A3 - db2374b2038d9d6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SkinCreatorViewController_vatr.setColor_vatr(color: __C.UIColor) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "916"
+                  endingLineNumber = "916"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "66CDE330-824D-46A3-8FCB-C9F30BDD61A3 - db2374b2038d9d6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.SkinCreatorViewController_vatr.setColor_vatr(color: __C.UIColor) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "916"
+                  endingLineNumber = "916"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "034E0722-B088-4521-9414-0EA824A2D38D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/Skin3DCreator/Skin3DTestViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "931"
+            endingLineNumber = "931"
+            landmarkName = "setColor_vatr(color:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "034E0722-B088-4521-9414-0EA824A2D38D - ded3ba2ef5f059ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.Skin3DTestViewController_vatr.setColor_vatr(color: __C.UIColor) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin3DCreator/Skin3DTestViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "931"
+                  endingLineNumber = "931"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "034E0722-B088-4521-9414-0EA824A2D38D - ded3ba2ef5f059ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.Skin3DTestViewController_vatr.setColor_vatr(color: __C.UIColor) -&gt; ()"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/Skin3DCreator/Skin3DTestViewController_vatr.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "931"
+                  endingLineNumber = "931"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E4F6C1B-EC8D-47A7-A265-A59515BCB1B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "createImageWithRawPixels_vatr(bodyPartSide:image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8E4F6C1B-EC8D-47A7-A265-A59515BCB1B6 - 3d5b615e84a715f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.PictureExporter_vatr.createImageWithRawPixels_vatr(bodyPartSide: Summer_Time_16.Side_vatr, image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "936">
+               </Location>
+               <Location
+                  uuid = "8E4F6C1B-EC8D-47A7-A265-A59515BCB1B6 - 3d5b615e84a715b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.PictureExporter_vatr.createImageWithRawPixels_vatr(bodyPartSide: Summer_Time_16.Side_vatr, image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "936">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53AC3F48-0E22-4F61-B178-6EC3DB7F6B77"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "createImageWithRawPixels_vatr(bodyPartSide:image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53AC3F48-0E22-4F61-B178-6EC3DB7F6B77 - 3d5b615e84a7197d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.PictureExporter_vatr.createImageWithRawPixels_vatr(bodyPartSide: Summer_Time_16.Side_vatr, image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "53AC3F48-0E22-4F61-B178-6EC3DB7F6B77 - 3d5b615e84a7193b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Summer_Time_16.PictureExporter_vatr.createImageWithRawPixels_vatr(bodyPartSide: Summer_Time_16.Side_vatr, image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Summer Time 16"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaliypolezhay/Downloads/craftyFinal16/Summer%20Time-16-Sub/Summer%20Time%2016/Tab%20Bar/Create%20Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B47AAA7D-FB37-4B78-900F-9B8743849E12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init(colorArray:canvasWidth:canvasHeight:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75081F7C-0156-4596-9EB4-ECB600A405C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/awewPictureExporter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "init(drawing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BE11BB5-E40D-4B64-B5D4-543A49119C41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/DrawLogic/qwqedfDrawing.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(colorArray:width:height:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11343E9C-B1EB-4FDA-B820-AFEED48A800E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/DrawLogic/qwqedfDrawing.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "init(drawing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E68763E1-5365-4231-A40F-1B3D2336E236"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/Canvas/aerfqCanvas.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "setUpPixelGrid(colorArray:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D2EEF0D-77D0-4647-81B8-5DFCCB930C40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/Canvas/aerfqCanvas.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(width:height:colorArray:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BB04029-E58F-41A4-A316-6872DB334C55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/PixelCreator/Canvas/rgtrwCanvasView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(colorArray:sceneSize:canvasSize:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FB258CA-F163-4E8F-B2B8-4C31B70158B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Tab Bar/Create Tab/SkinsCreator/ListOfCreatedSkinsController/Skin2DCreator/BodyPart2DPickerVC/SkinCreatorController/SkinCreatorViewController_vatr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "709"
+            endingLineNumber = "709"
+            landmarkName = "setUpCanvasView_vatr()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA9DEB10-AE09-4959-AD6B-61260E36D451"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summer Time 16/Extensions/qeqrUIImage+Resized.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "extractPixelColors_vatr(width:height:startX:startY:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

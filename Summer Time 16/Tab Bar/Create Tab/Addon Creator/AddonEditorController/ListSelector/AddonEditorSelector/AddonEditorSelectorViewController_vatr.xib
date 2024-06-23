@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddonEditorSelectorViewController_vatr" customModule="Summer_Time_16" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstrains" destination="nod-sL-lw2" id="iRt-Md-XYU"/>
+                <outlet property="cancelButton" destination="kas-gp-QdI" id="fqm-Dn-oDk"/>
+                <outlet property="collectionView" destination="eZg-dq-p41" id="jbz-er-ntv"/>
+                <outlet property="contentView" destination="bSs-cV-u3S" id="pYi-0D-bbU"/>
+                <outlet property="doneButton" destination="TEd-th-hiT" id="CkW-Cx-aPl"/>
+                <outlet property="importButton" destination="Hw8-a3-2o8" id="Ed8-Er-KmQ"/>
+                <outlet property="searchBarView" destination="BgB-ol-h6d" id="CRw-1R-euN"/>
+                <outlet property="stackView" destination="dwE-2r-IJ0" id="skP-aG-ie2"/>
+                <outlet property="view" destination="V7H-aQ-CaC" id="Qjm-gm-IDo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="V7H-aQ-CaC">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSs-cV-u3S">
+                    <rect key="frame" x="16" y="67" width="398" height="815"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgB-ol-h6d" customClass="SearchBarView_vatr" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="8" y="10" width="382" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BLR-7D-btf"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eZg-dq-p41">
+                            <rect key="frame" x="10" y="60" width="378" height="627"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6AB-59-fnK">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="8" minY="9" maxX="8" maxY="8"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dwE-2r-IJ0">
+                            <rect key="frame" x="10" y="707" width="378" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kas-gp-QdI">
+                                    <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="RGU-aV-kts"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="CANCEL">
+                                        <fontDescription key="titleFontDescription" name="Kufam-Bold" family="Kufam" pointSize="20"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="cancelTapped_vatrerer:" destination="-1" eventType="touchUpInside" id="a9w-Z3-nsi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw8-a3-2o8" userLabel="Import">
+                                    <rect key="frame" x="197" y="0.0" width="181" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="qzi-ND-SSe"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="IMPORT">
+                                        <fontDescription key="titleFontDescription" name="Kufam-Bold" family="Kufam" pointSize="20"/>
+                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="importTapped_vatrwe:" destination="-1" eventType="touchUpInside" id="kCe-t4-eKY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BgB-ol-h6d" secondAttribute="trailing" constant="8" id="7HO-0S-YDY"/>
+                        <constraint firstItem="dwE-2r-IJ0" firstAttribute="top" secondItem="eZg-dq-p41" secondAttribute="bottom" constant="20" id="NGi-JG-ha2"/>
+                        <constraint firstItem="eZg-dq-p41" firstAttribute="top" secondItem="BgB-ol-h6d" secondAttribute="bottom" constant="10" id="QW6-S0-n0r"/>
+                        <constraint firstItem="BgB-ol-h6d" firstAttribute="top" secondItem="bSs-cV-u3S" secondAttribute="top" constant="10" id="V9e-Av-4Ve"/>
+                        <constraint firstAttribute="trailing" secondItem="eZg-dq-p41" secondAttribute="trailing" constant="10" id="WHY-j0-u6M"/>
+                        <constraint firstItem="dwE-2r-IJ0" firstAttribute="leading" secondItem="bSs-cV-u3S" secondAttribute="leading" constant="10" id="dg6-8W-ujX"/>
+                        <constraint firstItem="eZg-dq-p41" firstAttribute="leading" secondItem="bSs-cV-u3S" secondAttribute="leading" constant="10" id="qHS-aC-Cfe"/>
+                        <constraint firstItem="BgB-ol-h6d" firstAttribute="leading" secondItem="bSs-cV-u3S" secondAttribute="leading" constant="8" id="wOH-th-Irt"/>
+                        <constraint firstAttribute="trailing" secondItem="dwE-2r-IJ0" secondAttribute="trailing" constant="10" id="xBX-h5-diN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEd-th-hiT" userLabel="Done">
+                    <rect key="frame" x="20" y="844" width="390" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="fOC-mY-gzn"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="DONE">
+                        <fontDescription key="titleFontDescription" name="Kufam-Bold" family="Kufam" pointSize="20"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="doneTapped_vatr9034:" destination="-1" eventType="touchUpInside" id="VqS-Sq-IQu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="05W-ZF-eKA"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TEd-th-hiT" secondAttribute="bottom" constant="40" id="JyO-oK-kLY"/>
+                <constraint firstItem="TEd-th-hiT" firstAttribute="leading" secondItem="V7H-aQ-CaC" secondAttribute="leading" constant="20" id="Qqk-OS-sBG"/>
+                <constraint firstItem="bSs-cV-u3S" firstAttribute="leading" secondItem="05W-ZF-eKA" secondAttribute="leading" constant="16" id="XwF-Tj-hau" userLabel="View.leading = Safe Area.leading "/>
+                <constraint firstItem="bSs-cV-u3S" firstAttribute="top" secondItem="05W-ZF-eKA" secondAttribute="top" constant="8" id="gdu-gH-GQn" userLabel="View.top = Safe Area.top "/>
+                <constraint firstAttribute="trailing" secondItem="TEd-th-hiT" secondAttribute="trailing" constant="20" id="lJR-FU-ONB"/>
+                <constraint firstItem="05W-ZF-eKA" firstAttribute="bottom" secondItem="bSs-cV-u3S" secondAttribute="bottom" constant="16" id="nod-sL-lw2" userLabel="Safe Area.bottom = View.bottom"/>
+                <constraint firstItem="05W-ZF-eKA" firstAttribute="trailing" secondItem="bSs-cV-u3S" secondAttribute="trailing" constant="16" id="oKi-ZU-cdR"/>
+                <constraint firstItem="TEd-th-hiT" firstAttribute="top" secondItem="dwE-2r-IJ0" secondAttribute="bottom" constant="20" id="sxa-8D-dRf"/>
+            </constraints>
+            <point key="canvasLocation" x="-1400.9302325581396" y="81.115879828326186"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

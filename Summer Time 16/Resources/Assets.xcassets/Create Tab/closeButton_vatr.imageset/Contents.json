@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Set Icons_ewwq.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Set Icons@2x_ewwq.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Set Icons@3x_ewwq.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
