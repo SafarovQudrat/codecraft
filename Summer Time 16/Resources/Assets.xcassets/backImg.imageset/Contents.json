@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Frame 738001844_trefe.png",
+      "filename" : "Image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Frame 738001844@2x_trefe.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Frame 738001844@3x_trefe.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
