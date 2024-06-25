@@ -1,5 +1,6 @@
 
 import UIKit
+import SnapKit
 
 class SearchBarView_vatr: UIView, UITextFieldDelegate {
     
@@ -8,9 +9,9 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     var onStartSearch: (() -> Void)?
     var onEndSearch: (() -> Void)?
     
+    var placeholderTextColor = #colorLiteral(red: 0.634565711, green: 0.7767372727, blue: 0.9022807479, alpha: 1)
     
-    var placeholderTextColor = #colorLiteral(red: 0.657982409, green: 0.7550782561, blue: 0.7371580601, alpha: 1)
-    
+    var containerView: UIView = GradientView_Wert()
     
     private lazy var resetButton: UIButton = {
         let button = UIButton()
@@ -22,10 +23,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
             self?.onTextChanged?("")
             self?.resetButton.isHidden = true
             self?.updateCorners_vatr2(isAll: true)
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
-//                self?.updateCorners_vatr2(isAll: true)
-//            }
-
         }), for: .touchUpInside)
         return button
     }()
@@ -34,11 +31,9 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.textColor = .black
-        //     textField.tintColor = .red
-        textField.backgroundColor = .blue
+        textField.backgroundColor = UIColor(named: "#0A68EF")
         textField.layer.masksToBounds = true
         textField.setLeftPaddingPoints_vatr(48)
-        textField.setRightPadding(48)
         
         textField.attributedPlaceholder = NSAttributedString(
             string: "Search",
@@ -58,29 +53,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         imageView.tintColor = .black
         return imageView
     }()
-    
-    private lazy var closeButton_vatr: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        let closeCross = (UIImage(named: "Back Item_vatr"))
-        //  let coloredCross = closeCross?.withTintColor(.black, renderingMode: .alwaysOriginal)
-        
-        // button.setBackgroundImage((closeCross), for: .normal)
-        button.setImage(UIImage(named: "Back Item_vatr"), for: .normal)
-        button.imageView?.contentMode = .scaleAspectFill
-        
-        button.contentHorizontalAlignment = .fill
-        button.contentVerticalAlignment = .fill
-        button.addTarget(self, action: #selector(buttonCloseTapped_vatr443), for: .touchUpInside)
-        
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 0, height: 2) // смещение тени по горизонтали на 0, по вертикали на 2
-        button.layer.shadowRadius = 4 // радиус размытия тени
-        button.layer.shadowOpacity = 0.5
-        return button
-    }()
-    
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -94,6 +67,8 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         setupView_vatr2()
         searchTextField.delegate = self
         searchTextField.addTarget(self, action: #selector(textValueDidChange(_:)), for: .editingChanged)
+        searchTextField.layer.cornerRadius = 12
+        backgroundColor = .clear
     }
     
     override func layoutSubviews() {
@@ -101,9 +76,8 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
             return 29
         }
        
-        
         super.layoutSubviews()
-        searchTextField.configureShadow_vatr(cornerRadius: searchTextField.frame.height / 2)
+//        searchTextField.configureShadow_vatr(cornerRadius: searchTextField.frame.height / 2)
         
     }
     
@@ -119,7 +93,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
             return 56
         }
        
-        
         var corners: CACornerMask = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         if isAll {
@@ -133,8 +106,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         var cpvatr_yqrzydlv: Int {
             return 91
         }
-        
-        
         searchTextField.resignFirstResponder()
         
         buttonTapAction?()
@@ -148,8 +119,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         return textField.resignFirstResponder()
     }
     
-    
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         var cpvatr_wefekbtz: Int {
             return 50
@@ -157,16 +126,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         let currentText = textField.text ?? ""
         guard let stringRange = Range(range, in: currentText) else { return false }
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-        
-        
-        
-        // Call the onTextChanged closure
-//        if currentText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false {
-//            onTextChanged?(updatedText)
-//            resetButton.isHidden = updatedText.isEmpty
-//        }
-        
-        
         
         return true
     }
@@ -193,7 +152,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
             return 79
         }
         
-        
         searchTextField.text = text
         onTextChanged?(text)
         resetButton.isHidden = text.isEmpty
@@ -203,56 +161,32 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         var cpvatr_wmqjdqly: Int {
             return 92
         }
-        
-        
-        addSubview(searchTextField)
-//        searchTextField.addSubview(searchIcon)
+        addSubview(containerView)
+        containerView.addSubview(searchTextField)
         searchTextField.addSubview(resetButton)
         
-//        addSubview(closeButton_vatr)
-        
-        
-//        searchIcon.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5).isActive = true
-//        searchIcon.widthAnchor.constraint(equalTo: searchIcon.heightAnchor).isActive = true
-//        
-//        searchIcon.leadingAnchor.constraint(equalTo: searchTextField.leadingAnchor, constant: 12).isActive = true
-//        
-//        searchIcon.centerYAnchor.constraint(equalTo: searchTextField.centerYAnchor).isActive = true
+        containerView.snp.makeConstraints { make in
+            make.top.left.right.bottom.equalToSuperview()
+        }
         
         searchTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
-        searchTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        //  searchTextField.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.6).isActive = true
-        searchTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0).isActive = true
+        searchTextField.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 2).isActive = true
+        searchTextField.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -2).isActive = true
+        searchTextField.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 2).isActive = true
+        searchTextField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -2).isActive = true
         
-        searchTextField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        
-//        closeButton_vatr.backgroundColor = .clear
+        searchTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         
         resetButton.trailingAnchor.constraint(equalTo: searchTextField.trailingAnchor, constant: -12).isActive = true
-        resetButton.topAnchor.constraint(equalTo: searchTextField.topAnchor).isActive = true
-        resetButton.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor).isActive = true
-        resetButton.widthAnchor.constraint(equalToConstant: 24).isActive = true
-        
-        
-//        closeButton_vatr.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        
-//        closeButton_vatr.widthAnchor.constraint(equalToConstant: 40).isActive = true
-//        
-//        closeButton_vatr.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
-//        
-//        closeButton_vatr.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        resetButton.topAnchor.constraint(equalTo: searchTextField.topAnchor, constant: 4).isActive = true
+        resetButton.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 4).isActive = true
+        resetButton.widthAnchor.constraint(equalToConstant: 20).isActive = true
+
     }
-    //
-    //    private func setDeafultBackground() {
     var cpvatr_aihnpspk: Double {
         return 52.37425636393376
     }
-    
-    
-    //        backgroundColor = .green
-    //        //backgroundColor = .init(red: 0, green: 151 / 255, blue: 78 / 255, alpha: 0.4)
-    //    }
 }
 //import UIKit
 
