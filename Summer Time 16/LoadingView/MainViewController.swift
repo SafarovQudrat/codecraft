@@ -14,11 +14,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue // Set your preferred background color or gradient
-        
+        BackView_did.SetupBackView(view: view)
         let titleLabel = UILabel()
         titleLabel.text = "MENU"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        titleLabel.font = UIFont(name: "ArialRoundedMTBold", size: 28)
         titleLabel.textColor = .white
         view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in
@@ -47,21 +46,24 @@ class MainViewController: UIViewController {
                 } else {
                     make.top.equalTo(titleLabel.snp.bottom).offset(40)
                 }
-                make.centerX.equalToSuperview()
-                make.width.equalTo(200)
-                make.height.equalTo(50)
+                make.left.equalTo(view.snp.left).offset(30)
+                make.right.equalTo(view.snp.right).offset(-30)
+//                make.width.equalTo(200)
+                make.height.equalTo(62)
             }
+
             lastButton = button
         }
     }
-    
+
     private func createButton(title: String) -> UIButton {
-        let button = UIButton(type: .system)
+        let button = GradientButton()
         button.setTitle(title, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        button.titleLabel?.font = UIFont(name: "ArialRoundedMTBold", size: 20)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 10
+        button.backgroundColor = .clear
+        button.layer.cornerRadius = 24
+        button.layer.masksToBounds = true
         return button
     }
     

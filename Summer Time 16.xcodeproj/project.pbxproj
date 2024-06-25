@@ -99,6 +99,9 @@
 		42F2731E2B55B91000611CE0 /* weModsRealmeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F2731D2B55B91000611CE0 /* weModsRealmeSession.swift */; };
 		42F494622B5AB73400328270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42F494612B5AB73400328270 /* GoogleService-Info.plist */; };
 		42F494632B5AB73400328270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42F494612B5AB73400328270 /* GoogleService-Info.plist */; };
+		5C83B84D2C2A8A0F00DF0AB2 /* Gradient_whb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B84C2C2A8A0F00DF0AB2 /* Gradient_whb.swift */; };
+		5C83B84F2C2AD80600DF0AB2 /* BackView_did.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B84E2C2AD80600DF0AB2 /* BackView_did.swift */; };
+		5C83B8512C2AEDDB00DF0AB2 /* NavBar_vatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B8502C2AEDDB00DF0AB2 /* NavBar_vatr.swift */; };
 		632471FC2A77AACA009CD1C3 /* argrgSkinCreatorController+Ext_Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632471FB2A77AACA009CD1C3 /* argrgSkinCreatorController+Ext_Collection.swift */; };
 		633030422A348FB400CDCD4A /* eafgreSkinCreatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633030412A348FB400CDCD4A /* eafgreSkinCreatedModel.swift */; };
 		633030442A34AB8900CDCD4A /* aefrgSkinEditorVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633030432A34AB8900CDCD4A /* aefrgSkinEditorVCModel.swift */; };
@@ -416,6 +419,9 @@
 		42F2731B2B55B8FF00611CE0 /* aeewItemsRealmSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aeewItemsRealmSession.swift; sourceTree = "<group>"; };
 		42F2731D2B55B91000611CE0 /* weModsRealmeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weModsRealmeSession.swift; sourceTree = "<group>"; };
 		42F494612B5AB73400328270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C83B84C2C2A8A0F00DF0AB2 /* Gradient_whb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient_whb.swift; sourceTree = "<group>"; };
+		5C83B84E2C2AD80600DF0AB2 /* BackView_did.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView_did.swift; sourceTree = "<group>"; };
+		5C83B8502C2AEDDB00DF0AB2 /* NavBar_vatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar_vatr.swift; sourceTree = "<group>"; };
 		632471FB2A77AACA009CD1C3 /* argrgSkinCreatorController+Ext_Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "argrgSkinCreatorController+Ext_Collection.swift"; sourceTree = "<group>"; };
 		633030412A348FB400CDCD4A /* eafgreSkinCreatedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eafgreSkinCreatedModel.swift; sourceTree = "<group>"; };
 		633030432A34AB8900CDCD4A /* aefrgSkinEditorVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aefrgSkinEditorVCModel.swift; sourceTree = "<group>"; };
@@ -1573,6 +1579,9 @@
 				F420A79B2A0283960098B849 /* Info.plist */,
 				F4DB05DE2A02A5BB00E4C43D /* Fonts */,
 				F420A7962A0283960098B849 /* Assets.xcassets */,
+				5C83B84C2C2A8A0F00DF0AB2 /* Gradient_whb.swift */,
+				5C83B84E2C2AD80600DF0AB2 /* BackView_did.swift */,
+				5C83B8502C2AEDDB00DF0AB2 /* NavBar_vatr.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1895,6 +1904,7 @@
 				632471FC2A77AACA009CD1C3 /* argrgSkinCreatorController+Ext_Collection.swift in Sources */,
 				F41A099A2A1E6A7100ECF94C /* HandsBodyPartViewController_vatr.swift in Sources */,
 				033847A62A9CBE9A00A55021 /* arfrgDocumentPicker.swift in Sources */,
+				5C83B84F2C2AD80600DF0AB2 /* BackView_did.swift in Sources */,
 				422C6D442B50226400453C6A /* omjjItemsTabBarViewController.swift in Sources */,
 				D719CE9C2A6BD81E00936868 /* CancellableProtocol_trgr.swift in Sources */,
 				C0EC65C92A4DA00700C5B8ED /* gfssrfSkinCommand.swift in Sources */,
@@ -1926,6 +1936,7 @@
 				D7A6CCEC2A68026D007EC907 /* dascUIViewController+Keyboard.swift in Sources */,
 				03AFFD402AD7F464002A131D /* ServersTabViewController_vatr.swift in Sources */,
 				F40415D82A126C4100066473 /* aerfqCanvas.swift in Sources */,
+				5C83B8512C2AEDDB00DF0AB2 /* NavBar_vatr.swift in Sources */,
 				6FA9FC7E2A4DBBC7001A1CD6 /* rgqergContentTabModels.swift in Sources */,
 				633BB6922AB852D9006DBE75 /* tgchvSaveRecsourceManager.swift in Sources */,
 				D7D06C462A6FF2D20063A44C /* trwweUIButton+Icon.swift in Sources */,
@@ -1940,6 +1951,7 @@
 				635281942A589ECA00F3EB23 /* dtthgjRealmServiceProviding.swift in Sources */,
 				F48E0B552A09498700B9020D /* wedUIViewController+DeviceOrientation.swift in Sources */,
 				4269ECCC2B4C090A00018B0F /* ubbjBaseItemsTabBarViewController.swift in Sources */,
+				5C83B84D2C2A8A0F00DF0AB2 /* Gradient_whb.swift in Sources */,
 				639F0C5B2A41CAD9002A35AB /* effweSceneLogicModel.swift in Sources */,
 				D707057A2A6147D90098A501 /* lmnFileManager+Copy.swift in Sources */,
 				6370382E2A5993870003A220 /* qwedwefCreatedAddonsModel.swift in Sources */,

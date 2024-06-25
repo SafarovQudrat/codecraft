@@ -9,9 +9,16 @@
 import Foundation
 import UIKit
 
-class BackView {
+class BackView_did {
     
     static func SetupBackView(view: UIView) {
+        
+        let patnis: UIView = {
+           let view = UIView()
+            view.backgroundColor = .clear
+            return view
+        }()
+        
         let imageView: UIImageView = {
            let view = UIImageView()
             view.translatesAutoresizingMaskIntoConstraints = false
@@ -20,6 +27,20 @@ class BackView {
             return view
         }()
         Gradient.setupGradient(view: view)
-        view.addSubview(imageView)
+        view.addSubview(patnis)
+        patnis.addSubview(imageView)
+        
+        NSLayoutConstraint.activate([
+            
+            patnis.topAnchor.constraint(equalTo: view.topAnchor),
+                        patnis.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                        patnis.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                        patnis.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            imageView.topAnchor.constraint(equalTo: patnis.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: patnis.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: patnis.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: patnis.bottomAnchor)
+        ])
     }
 }

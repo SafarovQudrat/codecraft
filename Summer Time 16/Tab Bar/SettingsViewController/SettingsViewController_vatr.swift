@@ -54,9 +54,28 @@ func BgdUkL() {
 }
   
         super.viewDidLoad()
+        termsContaienr.layer.masksToBounds = true
+        privacyContainer.layer.masksToBounds = true
+        doneView.layer.masksToBounds = true
+        backBtn.layer.masksToBounds = true
+        clearCacheContainer.layer.masksToBounds = true
+        clearCacheContainer.layer.cornerRadius = 28
+        termsContaienr.layer.cornerRadius = 8
+        privacyContainer.layer.cornerRadius = 8
+        backBtn.layer.cornerRadius = 5
+        doneView.layer.cornerRadius = 27
+        backBtn.layer.cornerRadius = 8
         setupUI_vatr()
         setupActions_vatr()
-        setupBackground_vatr()
+//        setupBackground_vatr()
+        Gradient.setupGradient(view: view)
+        Gradient.setupGradient(view: termsContaienr)
+        Gradient.setupGradient(view: privacyContainer)
+        Gradient.setupGradient(view: doneView)
+//        backBtn.backgroundColor = .green
+        Gradient.setupGradient(view: backBtn)
+        backBtn.bringSubviewToFront(backBtn.imageView!)
+        
     }
     
     deinit{
@@ -128,9 +147,9 @@ func RddfYsmB() {
   }
 }
   
-        termsContaienr.layer.cornerRadius = 32
-        privacyContainer.layer.cornerRadius = 32
-        clearCacheContainer.layer.cornerRadius = 32
+//        termsContaienr.layer.cornerRadius = 32
+//        privacyContainer.layer.cornerRadius = 32
+//        clearCacheContainer.layer.cornerRadius = 32
     }
 
     private var gradientLayer: CALayer! = nil
@@ -146,7 +165,7 @@ func xCcfO() {
 }
   
             super.viewDidLayoutSubviews()
-            gradientLayer.frame = view.bounds
+//            gradientLayer.frame = view.bounds
         }
     
     private func setupBackground_vatr() {
