@@ -33,7 +33,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         textField.textColor = .black
         textField.backgroundColor = UIColor(named: "#0A68EF")
         textField.layer.masksToBounds = true
-        textField.setLeftPaddingPoints_vatr(48)
+        textField.setLeftPaddingPoints_vatr(40)
         
         textField.attributedPlaceholder = NSAttributedString(
             string: "Search",
@@ -47,8 +47,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     let searchIcon: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        // configure the imageView here
-        imageView.image = UIImage(systemName: "magnifyingglass")
+        imageView.image = UIImage(named: "searchWhite_asd")
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .black
         return imageView
@@ -164,19 +163,25 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         addSubview(containerView)
         containerView.addSubview(searchTextField)
         searchTextField.addSubview(resetButton)
+        containerView.addSubview(searchIcon)
         
         containerView.snp.makeConstraints { make in
             make.top.left.right.bottom.equalToSuperview()
         }
         
-        searchTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        searchIcon.snp.makeConstraints { make in
+            make.left.equalTo(containerView.snp.left).offset(20)
+            make.height.width.equalTo(18)
+            make.centerY.equalToSuperview()
+        }
         
+        searchTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
         searchTextField.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 2).isActive = true
         searchTextField.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -2).isActive = true
         searchTextField.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 2).isActive = true
         searchTextField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -2).isActive = true
         
-        searchTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+//        searchTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         
         resetButton.trailingAnchor.constraint(equalTo: searchTextField.trailingAnchor, constant: -12).isActive = true
         resetButton.topAnchor.constraint(equalTo: searchTextField.topAnchor, constant: 4).isActive = true

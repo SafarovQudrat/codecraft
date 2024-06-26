@@ -263,20 +263,6 @@ open class DropDown_vatr : UITextField {
         self.arrow.position = .down
         self.layoutIfNeeded()
         
-        //        UIView.animate(withDuration: 0.2,
-        //                       delay: 0,
-        //                       animations: { () -> Void in
-        //            self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        //            self.table.frame = CGRect(x: self.pointToParent.x, y: y, width: self.frame.width, height: CGFloat(self.optionArray.count - 1) * self.rowHeight)
-        //                         self.table.alpha = 1
-        //                        self.arrow.position = .down
-        //
-        //
-        //        },
-        //                       completion: { (finish) -> Void in
-        //                        self.layoutIfNeeded()
-        //
-        //        })
         
     }
     
@@ -296,31 +282,16 @@ open class DropDown_vatr : UITextField {
         TableWillDisappearCompletion()
         
         UIView.performWithoutAnimation {
-                self.table.frame = CGRect(x: self.pointToParent.x,
-                                          y: self.pointToParent.y+self.frame.height,
-                                          width: self.frame.width,
-                                          height: 0)
-                self.arrow.position = .up
-                self.table.removeFromSuperview()
-                self.backgroundView.removeFromSuperview()
-                self.isSelected = false
-                self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-            }
-        
-//        UIView.animate(withDuration: 0.0,
-//                       animations: { () -> Void in
-//            self.table.frame = CGRect(x: self.pointToParent.x,
-//                                      y: self.pointToParent.y+self.frame.height,
-//                                      width: self.frame.width,
-//                                      height: 0)
-//            self.arrow.position = .up
-//        },
-//                       completion: { (didFinish) -> Void in
-//            self.table.removeFromSuperview()
-//            self.backgroundView.removeFromSuperview()
-//            self.isSelected = false
-//            self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-//        })
+            self.table.frame = CGRect(x: self.pointToParent.x,
+                                      y: self.pointToParent.y+self.frame.height,
+                                      width: self.frame.width,
+                                      height: 0)
+            self.arrow.position = .up
+            self.table.removeFromSuperview()
+            self.backgroundView.removeFromSuperview()
+            self.isSelected = false
+            self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        }
     }
     
     @objc public func touchAction() {
@@ -476,29 +447,8 @@ extension DropDown_vatr: UITableViewDataSource {
         cell.label.textColor = selectedIndex == indexPath.row ? .black : .secondaryLabel
         cell.lock.isHidden = indexPath.row == selectedIndex || !payedOptions.contains(where: { $0 == indexPath.row })
         
-        //        var configuration = cell.defaultContentConfiguration()
-        //        configuration.text = "\(dataArray[indexPath.row])"
-        //        configuration.textProperties.color = rowTextColor
-        //        configuration.textProperties.font = UIFont(name: CustomFont.medium.fontName, size: 14)!
-        //
-        //
-        //        cell.contentConfiguration = configuration
         cell.backgroundColor = rowBackgroundColor
         
-        
-        //
-        //        if indexPath.row != selectedIndex{
-        //            cell!.backgroundColor = rowBackgroundColor
-        //        }else {
-        //            cell?.backgroundColor = selectedRowColor
-        //        }
-        //
-        //        cell!.textLabel!.text = "\(dataArray[indexPath.row])"
-        //        cell!.accessoryType = (indexPath.row == selectedIndex) && checkMarkEnabled  ? .checkmark : .none
-        //        cell!.selectionStyle = .none
-        //        cell?.textLabel?.font = self.font
-        //        cell?.textLabel?.textAlignment =
-        //        cell?.textLabel?.textColor = rowTextColor
         return cell
     }
 }
@@ -512,7 +462,7 @@ extension DropDown_vatr: UITableViewDelegate {
             var VcEGD: Int = 1
             if VcEGD > 1 {
                 if VcEGD < 1 {
-                    VcEGD = 1  
+                    VcEGD = 1
                 }
                 
             }

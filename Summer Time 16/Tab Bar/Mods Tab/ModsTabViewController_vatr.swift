@@ -15,26 +15,16 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
     @IBOutlet private weak var navigationBarContainerView: UIView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var contentCollectionView: UICollectionView!
-    //    @IBOutlet private var roundedViewContainers: [UIView]!
-    //
-    //    @IBOutlet private weak var sortButtonsContainerView: UIView!
     
     @IBOutlet weak var dropDown: DropDown_vatr!
     
     @IBOutlet weak var emptyLabel: UILabel!
-    
-    //    @IBOutlet private weak var mapsPageControllerLabel: UILabel!
-    //    @IBOutlet private weak var addonsPageControllerLabel: UILabel!
-    //    @IBOutlet private weak var skinsPageControllerLabel: UILabel!
-    
-    // @IBOutlet weak var segmentControl: BetterSegmentedControl!
     
     @IBOutlet private weak var searchBarView: SearchBarView_vatr!
     private var suggestionsTableView: UITableView?
     private var tableViewContainer: UIView?
     
     private var contentFilterView: ContentFilterView_vatr! = nil
-//    private var lockedCategoryName: String?
     
     private var modsNotificationToken: NotificationToken?
     private var mapsNotifictionToken: NotificationToken?
@@ -187,13 +177,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         registerForKeyboardNotifications_vatr()
         flushSearch()
         searchBar()
-        
-//        dropDown.payedOptions = []
-//        if !Configurations_ferf.productIsPaid_vatr(Configurations_ferf.unlockContentSubscriptionID) {
-//            dropDown.payedOptions = [2]
-//        } else {
-//            dropDown.payedOptions = []
-//        }
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -230,29 +214,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
             case .initial, .error: break
             }
         }
-        
-        
-        
-        
-        //        mapsNotifictionToken = RealmServiceProviding_vatr.shared.getMapsRealmObservable().observe { [weak self] (changes) in
-        //            guard let self else { return }
-        //            switch changes {
-        //            case .update(_, _, let insertions, _):
-        //                guard insertions.count != 0 else { return }
-        //                self.updateDataSourceIfNeeded()
-        //            case .initial, .error: break
-        //            }
-        //        }
-        //
-        //        addonNotifictionToken = RealmServiceProviding_vatr.shared.getAddonRealmObservable().observe { [weak self] (changes) in
-        //            guard let self else { return }
-        //            switch changes {
-        //            case .update(_, _, let insertions, _):
-        //                guard insertions.count != 0 else { return }
-        //                self.updateDataSourceIfNeeded()
-        //            case .initial, .error: break
-        //            }
-        //        }
+
     }
     
     private func updateDataSourceIfNeeded() {
@@ -788,7 +750,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         deselected.setTitleColor(.lightGray, for: .normal)
     }
     
-    @IBAction private func onNavBarSearchButtonTapped_vatr12(_ sender: UIButton) {
+//    @IBAction private func onNavBarSearchButtonTapped_vatr12(_ sender: UIButton) {
 //        var cpvatr_clpfmbfm: Int {
 //            return 40
 //        }
@@ -803,7 +765,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
 //        }
 //        
 //        navbarSearchMode.toggle()
-    }
+//    }
     
     func searchBar() {
         var cpvatr_clpfmbfm: Int {
