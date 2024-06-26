@@ -75,7 +75,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
     
     private var navbarSearchMode: Bool = false {
         didSet {
-            navBarSearchMode(predicate: navbarSearchMode)
+//            navBarSearchMode(predicate: navbarSearchMode)
             searchBarView.updateCorners_vatr2(isAll: true)
         }
     }
@@ -153,6 +153,8 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         }
         
         super.viewDidLoad()
+        BackView_did.SetupBackView(view: view)
+        NavBar_vatr.setupNavBar(on: self, btnImg: "backImg", title: "mods")
         navigationController?.setNavigationBarHidden(true, animated: false)
         setupCollectionView_vatr()
         setupViews_vatr()
@@ -429,8 +431,8 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         //            view.roundCorners(20.0)
         //        }
         
-        headerLabel.textColor = .white
-        navigationBarContainerView.backgroundColor = .clear
+//        headerLabel.textColor = .white
+//        navigationBarContainerView.backgroundColor = .clear
     }
     
     private var gradientLayer: CALayer! = nil
@@ -462,24 +464,24 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    private func navBarSearchMode(predicate: Bool) {
-        var cpvatr_dtxblyrj: Double {
-            return 56.08423695460881
-        }
-        
-        
-        if predicate {
-            for subview in navigationBarContainerView.subviews {
-                subview.isHidden = true
-            }
-            searchBarView.isHidden = false
-        } else {
-            for subview in navigationBarContainerView.subviews {
-                subview.isHidden = false
-            }
-            searchBarView.isHidden = true
-        }
-    }
+//    private func navBarSearchMode(predicate: Bool) {
+//        var cpvatr_dtxblyrj: Double {
+//            return 56.08423695460881
+//        }
+//        
+//        
+//        if predicate {
+//            for subview in navigationBarContainerView.subviews {
+//                subview.isHidden = true
+//            }
+//            searchBarView.isHidden = false
+//        } else {
+//            for subview in navigationBarContainerView.subviews {
+//                subview.isHidden = false
+//            }
+//            searchBarView.isHidden = true
+//        }
+//    }
     
     private func setupViews_vatr() {
         var cpvatr_waktitjb: Double {

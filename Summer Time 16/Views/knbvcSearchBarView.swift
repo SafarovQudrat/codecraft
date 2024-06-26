@@ -254,3 +254,55 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     //        //backgroundColor = .init(red: 0, green: 151 / 255, blue: 78 / 255, alpha: 0.4)
     //    }
 }
+//import UIKit
+
+class CustomSearchBar: UIView {
+    
+    let searchImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "magnifyingglass")
+        imageView.tintColor = .white
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    let textField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Search"
+        textField.textColor = .white
+        textField.borderStyle = .none
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+        setupConstraints()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupViews() {
+        backgroundColor = UIColor(red: 38/255, green: 134/255, blue: 241/255, alpha: 1) // Blue background color
+        layer.cornerRadius = 10
+        addSubview(searchImageView)
+        addSubview(textField)
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            searchImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            searchImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            searchImageView.widthAnchor.constraint(equalToConstant: 20),
+            searchImageView.heightAnchor.constraint(equalToConstant: 20),
+            
+            textField.leadingAnchor.constraint(equalTo: searchImageView.trailingAnchor, constant: 10),
+            textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            textField.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            textField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
+        ])
+    }
+}

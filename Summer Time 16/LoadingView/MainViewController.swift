@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         BackView_did.SetupBackView(view: view)
+        Gradient.setupGradient(view: view)
         let titleLabel = UILabel()
         titleLabel.text = "MENU"
         titleLabel.font = UIFont(name: "ArialRoundedMTBold", size: 28)

@@ -15,7 +15,7 @@ class BackView_did {
         
         let patnis: UIView = {
            let view = UIView()
-            view.backgroundColor = .clear
+//            view.backgroundColor = .clear
             return view
         }()
         
@@ -23,24 +23,26 @@ class BackView_did {
            let view = UIImageView()
             view.translatesAutoresizingMaskIntoConstraints = false
             view.contentMode = .scaleAspectFill
-            view.image = UIImage(named: "backImg")
+            
             return view
         }()
+        imageView.image = UIImage(named: "backImg")
         Gradient.setupGradient(view: view)
-        view.addSubview(patnis)
-        patnis.addSubview(imageView)
+//        Gradient.setupGradient(view: patnis)
+//        view.addSubview(patnis)
+        view.addSubview(imageView)
         
         NSLayoutConstraint.activate([
             
-            patnis.topAnchor.constraint(equalTo: view.topAnchor),
-                        patnis.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                        patnis.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                        patnis.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            imageView.topAnchor.constraint(equalTo: patnis.topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: patnis.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: patnis.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: patnis.bottomAnchor)
+//            patnis.topAnchor.constraint(equalTo: view.topAnchor),
+//                        patnis.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//                        patnis.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//                        patnis.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }

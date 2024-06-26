@@ -512,7 +512,7 @@ extension DropDown_vatr: UITableViewDelegate {
             var VcEGD: Int = 1
             if VcEGD > 1 {
                 if VcEGD < 1 {
-                    VcEGD = 1
+                    VcEGD = 1  
                 }
                 
             }
