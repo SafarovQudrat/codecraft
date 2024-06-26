@@ -2266,7 +2266,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4LMH8QQN35;
+				DEVELOPMENT_TEAM = 8V8RMZC8NU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Summer Time 16/Resources/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -2306,7 +2306,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4LMH8QQN35;
+				DEVELOPMENT_TEAM = 8V8RMZC8NU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Summer Time 16/Resources/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
