@@ -18,6 +18,8 @@ final class ContentCollectionViewCell_vatr: UICollectionViewCell {
     @IBOutlet weak var categoryImageView: UIImageView!
 //    @IBOutlet weak var headerLabContainerView: UIView!
     
+    @IBOutlet weak var patnisV: UIView!
+    
     // private let imageSemaphore = DispatchSemaphore(value: 0)
     private var imageUrl: URL? {
         didSet {
@@ -68,11 +70,16 @@ func PaNarXh() {
 }
   
         super.awakeFromNib()
-        
+        patnisV.layer.masksToBounds = true
+        patnisV.layer.cornerRadius = 8
+        Gradient.setupGradientForBorderColor(view: patnisV)
+        headerLabel.font = UIFont(name: "Kufam-Bold", size: 16)
+        categoryImageView.backgroundColor = #colorLiteral(red: 0.1355771422, green: 0.214324832, blue: 0.9195229411, alpha: 1)
+        categoryImageView.layer.cornerRadius = 5
         configureView_vatr2()
         backgroundColor = .clear
         contentImageView.backgroundColor = .clear
-        contentImageView.kf.indicatorType = .activity
+//        contentImageView.kf.indicatorType = .activity
         
         self.addLoader()
         
@@ -94,6 +101,7 @@ func xcFbtLX() {
 }
   
         super.layoutSubviews()
+        
         roundedBackgroundView.configureShadow_vatr()
     }
 
@@ -332,8 +340,8 @@ func HlrNBjfDP() {
   }
 }
   
-        roundedBackgroundView.roundCorners_vatr()
-        roundedBackgroundView.backgroundColor = UIColor(red: 1, green: 0.965, blue: 0.925, alpha: 1)
+//        roundedBackgroundView.roundCorners_vatr()
+//        roundedBackgroundView.backgroundColor = UIColor(red: 1, green: 0.965, blue: 0.925, alpha: 1)
     }
     
 //    private func setupHeaderLabContainerViewl() {

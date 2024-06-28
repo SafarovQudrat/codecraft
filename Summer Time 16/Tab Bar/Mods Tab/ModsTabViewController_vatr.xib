@@ -33,6 +33,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="1205"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg" translatesAutoresizingMaskIntoConstraints="NO" id="m66-Lm-t3s">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1171"/>
+                </imageView>
                 <view contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-T6-bmk" userLabel="NavigationBarContainer">
                     <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                     <subviews>
@@ -81,6 +84,12 @@
                         <constraint firstAttribute="height" constant="46" id="wDj-n2-fbp"/>
                     </constraints>
                 </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thereʼs no discovery of the parameters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDP-7V-eOE">
+                    <rect key="frame" x="20" y="595.66666666666663" width="374" height="23.666666666666629"/>
+                    <fontDescription key="fontDescription" name="Kufam-Medium" family="Kufam" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oq0-Va-xSk">
                     <rect key="frame" x="20" y="220" width="374" height="951"/>
                     <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,20 +104,16 @@
                         <outlet property="delegate" destination="-1" id="1fm-DI-Esx"/>
                     </connections>
                 </collectionView>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thereʼs no discovery of the parameters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDP-7V-eOE">
-                    <rect key="frame" x="20" y="595.66666666666663" width="374" height="23.666666666666629"/>
-                    <fontDescription key="fontDescription" name="Kufam-Medium" family="Kufam" pointSize="18"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDP-7V-eOE" secondAttribute="trailing" constant="20" id="3BR-yT-VNh"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3cw-Rk-NfV"/>
+                <constraint firstItem="m66-Lm-t3s" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="-200" id="5eR-Fi-wNa"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8mg-u1-gLB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFG-T6-bmk" secondAttribute="trailing" id="8qv-uZ-kWC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="m66-Lm-t3s" secondAttribute="bottom" id="8zp-d7-7Sf"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="CJt-m6-Yk6"/>
                 <constraint firstItem="qkG-yc-sYW" firstAttribute="top" secondItem="epL-fs-8do" secondAttribute="bottom" constant="10" id="Hig-mY-wKG"/>
                 <constraint firstItem="epL-fs-8do" firstAttribute="top" secondItem="FFG-T6-bmk" secondAttribute="bottom" constant="10" id="PXo-Gp-5GL"/>
@@ -118,6 +123,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oq0-Va-xSk" secondAttribute="bottom" id="hcC-8l-eX6"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k5V-AZ-ead"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oq0-Va-xSk" secondAttribute="trailing" constant="20" id="kXv-cI-0jW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m66-Lm-t3s" secondAttribute="trailing" id="mOa-zB-Jde"/>
+                <constraint firstItem="m66-Lm-t3s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pxc-l6-NKH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="epL-fs-8do" secondAttribute="trailing" constant="20" id="pyP-d4-9tE"/>
                 <constraint firstItem="qkG-yc-sYW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rRL-tz-vTI"/>
                 <constraint firstItem="oq0-Va-xSk" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="20" id="vxK-KO-0TO"/>
@@ -128,6 +135,7 @@
         </view>
     </objects>
     <resources>
+        <image name="backImg" width="1082" height="1624"/>
         <image name="button:ocf-Q7-C7u:image" width="40" height="40">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T

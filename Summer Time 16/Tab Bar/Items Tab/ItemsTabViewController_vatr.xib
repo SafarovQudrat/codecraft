@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,8 +16,9 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemsTabViewController_vatr" customModule="Crafty_Craft_16" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemsTabViewController_vatr" customModule="Summer_Time_16" customModuleProvider="target">
             <connections>
+                <outlet property="backBtn" destination="ocf-Q7-C7u" id="bLi-7i-T8b"/>
                 <outlet property="contentCollectionView" destination="oq0-Va-xSk" id="VOs-Y5-afc"/>
                 <outlet property="dropDown" destination="qkG-yc-sYW" id="3ar-Wp-nty"/>
                 <outlet property="emptyLabel" destination="bDP-7V-eOE" id="pWC-vw-5f4"/>
@@ -32,6 +33,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg" translatesAutoresizingMaskIntoConstraints="NO" id="qzK-iT-299">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
                 <view contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-T6-bmk" userLabel="NavigationBarContainer">
                     <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                     <subviews>
@@ -53,7 +57,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-Sf-Tdp" customClass="SearchBarView_vatr" customModule="Crafty_Craft_16" customModuleProvider="target">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-Sf-Tdp" customClass="SearchBarView_vatr" customModule="Summer_Time_16" customModuleProvider="target">
                             <rect key="frame" x="16" y="5" width="382" height="40"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -64,7 +68,7 @@
                                 <constraint firstAttribute="height" constant="40" id="cZb-hW-O1X"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" backgroundImage="Settings Item_vatr"/>
+                            <state key="normal" backgroundImage="back"/>
                             <connections>
                                 <action selector="setSettingsBtnTapped_vatr:" destination="-1" eventType="touchUpInside" id="clB-6c-BeT"/>
                             </connections>
@@ -89,7 +93,7 @@
                         <constraint firstItem="ocf-Q7-C7u" firstAttribute="leading" secondItem="Iex-kb-vSV" secondAttribute="leading" constant="20" id="xNW-fZ-eCP"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-yc-sYW" customClass="DropDown_vatr" customModule="Crafty_Craft_16" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-yc-sYW" customClass="DropDown_vatr" customModule="Summer_Time_16" customModuleProvider="target">
                     <rect key="frame" x="20" y="114" width="374" height="46"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -120,17 +124,21 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="qzK-iT-299" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Pt-Yh-Tnl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDP-7V-eOE" secondAttribute="trailing" constant="40" id="3BR-yT-VNh"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="3cw-Rk-NfV"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8mg-u1-gLB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFG-T6-bmk" secondAttribute="trailing" id="8qv-uZ-kWC"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="CJt-m6-Yk6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qzK-iT-299" secondAttribute="bottom" id="QGZ-Mq-sYx"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Wwe-XX-v6N"/>
                 <constraint firstItem="oq0-Va-xSk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XMz-1I-mYg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qzK-iT-299" secondAttribute="trailing" id="cEI-Yd-hXQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oq0-Va-xSk" secondAttribute="bottom" id="hcC-8l-eX6"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k5V-AZ-ead"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oq0-Va-xSk" secondAttribute="trailing" constant="20" id="kXv-cI-0jW"/>
                 <constraint firstItem="qkG-yc-sYW" firstAttribute="top" secondItem="FFG-T6-bmk" secondAttribute="bottom" constant="20" id="l1x-bZ-VXj"/>
+                <constraint firstItem="qzK-iT-299" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qCS-Rh-K1b"/>
                 <constraint firstItem="qkG-yc-sYW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rRL-tz-vTI"/>
                 <constraint firstItem="oq0-Va-xSk" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="20" id="vxK-KO-0TO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qkG-yc-sYW" secondAttribute="trailing" constant="20" id="yuq-rT-Bs5"/>
@@ -140,6 +148,7 @@
     </objects>
     <resources>
         <image name="Search Item_vatr" width="40" height="40"/>
-        <image name="Settings Item_vatr" width="40" height="40"/>
+        <image name="back" width="92" height="91"/>
+        <image name="backImg" width="1082" height="1624"/>
     </resources>
 </document>

@@ -100,6 +100,16 @@
 		42F2731E2B55B91000611CE0 /* weModsRealmeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F2731D2B55B91000611CE0 /* weModsRealmeSession.swift */; };
 		42F494622B5AB73400328270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42F494612B5AB73400328270 /* GoogleService-Info.plist */; };
 		42F494632B5AB73400328270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42F494612B5AB73400328270 /* GoogleService-Info.plist */; };
+		5C8291522C2DF73900D8A39B /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8291482C2DF73800D8A39B /* Rubik-Light.ttf */; };
+		5C8291532C2DF73900D8A39B /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8291492C2DF73800D8A39B /* Rubik-Bold.ttf */; };
+		5C8291542C2DF73900D8A39B /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914A2C2DF73800D8A39B /* Rubik-LightItalic.ttf */; };
+		5C8291552C2DF73900D8A39B /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914B2C2DF73800D8A39B /* Rubik-Italic.ttf */; };
+		5C8291562C2DF73900D8A39B /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914C2C2DF73800D8A39B /* Rubik-Black.ttf */; };
+		5C8291572C2DF73900D8A39B /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914D2C2DF73800D8A39B /* Rubik-BlackItalic.ttf */; };
+		5C8291582C2DF73900D8A39B /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914E2C2DF73800D8A39B /* Rubik-BoldItalic.ttf */; };
+		5C8291592C2DF73900D8A39B /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C82914F2C2DF73800D8A39B /* Rubik-Medium.ttf */; };
+		5C82915A2C2DF73900D8A39B /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8291502C2DF73800D8A39B /* Rubik-MediumItalic.ttf */; };
+		5C82915B2C2DF73900D8A39B /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8291512C2DF73900D8A39B /* Rubik-Regular.ttf */; };
 		5C83B84D2C2A8A0F00DF0AB2 /* Gradient_whb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B84C2C2A8A0F00DF0AB2 /* Gradient_whb.swift */; };
 		5C83B84F2C2AD80600DF0AB2 /* BackView_did.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B84E2C2AD80600DF0AB2 /* BackView_did.swift */; };
 		5C83B8512C2AEDDB00DF0AB2 /* NavBar_vatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83B8502C2AEDDB00DF0AB2 /* NavBar_vatr.swift */; };
@@ -421,6 +431,16 @@
 		42F2731B2B55B8FF00611CE0 /* aeewItemsRealmSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aeewItemsRealmSession.swift; sourceTree = "<group>"; };
 		42F2731D2B55B91000611CE0 /* weModsRealmeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weModsRealmeSession.swift; sourceTree = "<group>"; };
 		42F494612B5AB73400328270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C8291482C2DF73800D8A39B /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		5C8291492C2DF73800D8A39B /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		5C82914A2C2DF73800D8A39B /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		5C82914B2C2DF73800D8A39B /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		5C82914C2C2DF73800D8A39B /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		5C82914D2C2DF73800D8A39B /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5C82914E2C2DF73800D8A39B /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5C82914F2C2DF73800D8A39B /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		5C8291502C2DF73800D8A39B /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5C8291512C2DF73900D8A39B /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		5C83B84C2C2A8A0F00DF0AB2 /* Gradient_whb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient_whb.swift; sourceTree = "<group>"; };
 		5C83B84E2C2AD80600DF0AB2 /* BackView_did.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView_did.swift; sourceTree = "<group>"; };
 		5C83B8502C2AEDDB00DF0AB2 /* NavBar_vatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar_vatr.swift; sourceTree = "<group>"; };
@@ -1596,6 +1616,16 @@
 				4280A33D2B3D969800EA9544 /* Kufam-Regular.ttf */,
 				4280A33F2B3DFB0500EA9544 /* Kufam-SemiBold.ttf */,
 				4280A33E2B3DE47700EA9544 /* Kufam-Bold.ttf */,
+				5C82914C2C2DF73800D8A39B /* Rubik-Black.ttf */,
+				5C82914D2C2DF73800D8A39B /* Rubik-BlackItalic.ttf */,
+				5C8291492C2DF73800D8A39B /* Rubik-Bold.ttf */,
+				5C82914E2C2DF73800D8A39B /* Rubik-BoldItalic.ttf */,
+				5C82914B2C2DF73800D8A39B /* Rubik-Italic.ttf */,
+				5C8291482C2DF73800D8A39B /* Rubik-Light.ttf */,
+				5C82914A2C2DF73800D8A39B /* Rubik-LightItalic.ttf */,
+				5C82914F2C2DF73800D8A39B /* Rubik-Medium.ttf */,
+				5C8291502C2DF73800D8A39B /* Rubik-MediumItalic.ttf */,
+				5C8291512C2DF73900D8A39B /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -1782,12 +1812,16 @@
 				4280A3402B3DFB0500EA9544 /* Kufam-SemiBold.ttf in Resources */,
 				039BF14D2AA227BE0065EF48 /* ManualInstructionViewController_vatr.xib in Resources */,
 				6F1CADF22A667C4900735EAB /* AddonCollectionViewCell_vatr.xib in Resources */,
+				5C8291592C2DF73900D8A39B /* Rubik-Medium.ttf in Resources */,
 				63F971D62A3721EB005D102E /* BodyPartPickerViewController_vatr.xib in Resources */,
 				F41A099B2A1E6A7100ECF94C /* HandsBodyPartViewController_vatr.xib in Resources */,
 				03A8F7662ADEA80F00B87A4A /* SeedTableViewCell_vatr.xib in Resources */,
 				422C6D472B50255200453C6A /* NavigationBarContainer_vatr.xib in Resources */,
 				0304BBFA2A9798EB00D75017 /* SearchSuggestionCell_vatr.xib in Resources */,
+				5C8291552C2DF73900D8A39B /* Rubik-Italic.ttf in Resources */,
 				4234945B2B3F5F4400146B15 /* SsvedAddonCollectionCell_vatr.xib in Resources */,
+				5C8291532C2DF73900D8A39B /* Rubik-Bold.ttf in Resources */,
+				5C82915A2C2DF73900D8A39B /* Rubik-MediumItalic.ttf in Resources */,
 				F41A09A72A1E6ABD00ECF94C /* TorsoBodyPartViewController_vatr.xib in Resources */,
 				4280A3412B3DFB7C00EA9544 /* Kufam-Medium.ttf in Resources */,
 				D70970362A77F6F80044F81F /* SkinCreatorImportViewController_vatr.xib in Resources */,
@@ -1801,15 +1835,20 @@
 				038360C32AEFD83C00751797 /* SeedDetailsViewController_vatr.xib in Resources */,
 				033847A12A9CB41700A55021 /* DownloadContnetViewController_vatr.xib in Resources */,
 				F4DB05D12A02959000E4C43D /* TabBarViewController_vatr.xib in Resources */,
+				5C8291522C2DF73900D8A39B /* Rubik-Light.ttf in Resources */,
 				F41F6D0F2A21078500F72851 /* SkinEditorViewController_vatr.xib in Resources */,
 				03A54F8A2AD5937C00F10AA5 /* AddonCreatorMainVC_vatr.xib in Resources */,
+				5C8291582C2DF73900D8A39B /* Rubik-BoldItalic.ttf in Resources */,
+				5C8291542C2DF73900D8A39B /* Rubik-LightItalic.ttf in Resources */,
 				F4916C7A2A0B89270090E9B6 /* AddonCreatorViewController_vatr.xib in Resources */,
 				039BF1492AA200750065EF48 /* RafAlertViewController_vatr.xib in Resources */,
 				037707672ADEE24B00B8D755 /* ServerDetailsViewController_vatr.xib in Resources */,
 				4280A3422B3DFB7E00EA9544 /* Kufam-Regular.ttf in Resources */,
 				C0EC65732A44488900C5B8ED /* SmallModelView_vatr.xib in Resources */,
 				F438AA272A14FA05007469E7 /* ColorPickerViewController_vatr.xib in Resources */,
+				5C8291572C2DF73900D8A39B /* Rubik-BlackItalic.ttf in Resources */,
 				F4ADA93A2A0A6A46009A2756 /* SkinCreatorViewController_vatr.xib in Resources */,
+				5C82915B2C2DF73900D8A39B /* Rubik-Regular.ttf in Resources */,
 				42197FF92B56ADA5008D3C77 /* ItemsTabViewController_vatr.xib in Resources */,
 				42B18CC12B446A1D000A6777 /* CollectionViewItemsPreview_vatr.xib in Resources */,
 				C0398D912A54309C00A48138 /* SaveAlertView_vatr.xib in Resources */,
@@ -1824,6 +1863,7 @@
 				03A8F7612ADEA2C800B87A4A /* SeedTabViewController_vatr.xib in Resources */,
 				63EE81AD2A581362005BE8E7 /* AddonEditorViewController_vatr.xib in Resources */,
 				F41A099F2A1E6A8400ECF94C /* LegsBodyPartViewControllerViewController_vatr.xib in Resources */,
+				5C8291562C2DF73900D8A39B /* Rubik-Black.ttf in Resources */,
 				F41F6D132A210B7D00F72851 /* SkinEditorCollectionViewCell_vatr.xib in Resources */,
 				F4DE46772A03B157001DFB1B /* ContentCollectionViewCell_vatr.xib in Resources */,
 				F420A7972A0283960098B849 /* Assets.xcassets in Resources */,

@@ -4,7 +4,6 @@ import UIKit
 
 final class CollectionViewItemsPreview_vatr: UIView {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -202,7 +201,7 @@ final class CollectionViewItemsPreview_vatr: UIView {
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(77), heightDimension: .absolute(79)), subitem: item, count: 1)
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(100), heightDimension: .absolute(79)), subitem: item, count: 1)
             
             let section = NSCollectionLayoutSection(group: group)
             

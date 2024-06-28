@@ -143,8 +143,10 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         }
         
         super.viewDidLoad()
-        BackView_did.SetupBackView(view: view)
-        NavBar_vatr.setupNavBar(on: self, btnImg: "backImg", title: "mods")
+//        BackView_did.SetupBackView(view: view)
+        Gradient.setupGradient(view: view)
+        NavBar_vatr.setupNavBar(on: self, btnImg: "back", title: "mods")
+        navigationBarContainerView.isHidden = true
         navigationController?.setNavigationBarHidden(true, animated: false)
         setupCollectionView_vatr()
         setupViews_vatr()

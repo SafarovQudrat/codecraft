@@ -9,7 +9,11 @@ class ContentViewController_vatr: UIViewController {
     
     @IBOutlet private weak var navigationBarContainerView: UIView!
     
+    @IBOutlet weak var backImg_vatr: UIImageView!
     
+    @IBOutlet weak var popBtn: UIButton!
+    
+    @IBOutlet weak var newBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var favoriteButton: UIButton!
     @IBOutlet private weak var scrollView: UIScrollView!
@@ -91,17 +95,34 @@ class ContentViewController_vatr: UIViewController {
         }
         
         super.viewDidLoad()
+        Gradient.setupGradient(view: view)
+        backImg_vatr.contentMode = .scaleAspectFill
+        backImg_vatr.image = UIImage(named: "backImg")
+        pageLabel.font = UIFont(name: "Rubik-Medium", size: 20)
+        newBtn.titleLabel?.font = UIFont(name: "Rubik-Medium", size: 20)
+        textView.font = UIFont(name: "Rubik-Regular", size: 18)
+        downloadButton_vatr.titleLabel?.font = UIFont(name: "Rubik-Bold", size: 20)
+        titleLabel.font = UIFont(name: "Rubik-Bold", size: 26)
+        downloadButton_vatr.layer.masksToBounds = true
+        downloadButton_vatr.layer.cornerRadius = 28
+        favoriteButton.layer.masksToBounds = true
+        favoriteButton.layer.cornerRadius = 5
+        popBtn.layer.masksToBounds = true
+        popBtn.layer.cornerRadius = 5
+        newBtn.layer.masksToBounds = true
+        newBtn.layer.cornerRadius = 5
+        popBtn.setImage(UIImage(named: "pop"), for: .normal)
         
         NetworkStatusMonitor_vatr.shared.delegate = self
         setUpPropertys_vatr()
         
         navigationBarContainerView.backgroundColor = .clear
-        downloadButton_vatr.roundCorners_vatr(20)
+        downloadButton_vatr.roundCorners_vatr(28)
         
         
         if mode != .skins {
-            downloadButton_vatr.borderWidth = 2
-            downloadButton_vatr.borderColor = .white
+//            downloadButton_vatr.borderWidth = 2
+//            downloadButton_vatr.borderColor = .white
         }
         
         
@@ -148,6 +169,8 @@ class ContentViewController_vatr: UIViewController {
     
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
+        
+        Gradient.setupGradient(view: popBtn)
         
         func qlAAvAcP() {
             var aofRHPotOL: Int = 7
@@ -222,7 +245,7 @@ class ContentViewController_vatr: UIViewController {
             pageLabel.isHidden = true
             textView.isHidden = true
             scrollView.isHidden = true
-            pageImage.layer.cornerRadius = 48
+            pageImage.layer.cornerRadius = 8
             pedestalImage.isHidden = false
             //view.bringSubviewToFront(pedestalImage.superview!)
             NSLayoutConstraint.deactivate([heighImageConstraint, bottomImageConstraint])
@@ -431,7 +454,7 @@ class ContentViewController_vatr: UIViewController {
             }
         }
         
-        let imageName = isPageFavorite ? "FavButton_selected_vatr" : "FavButton_unselected_vatr"
+        let imageName = isPageFavorite ? "like" : "unlike"
         favoriteButton.setImage(UIImage(named: imageName), for: .normal)
     }
     
@@ -451,7 +474,7 @@ class ContentViewController_vatr: UIViewController {
         
         var buttonTitle = !isAlreadyDownloadItem_vatr ? "DOWNLOAD" : "EXPORT"
         if mode == .addons, isAlreadyDownloadItem_vatr {
-            buttonTitle = "INSTALL"
+            buttonTitle = "DOWNLOAD"
         }
         
         downloadButton_vatr.setTitle(buttonTitle, for: .normal)
@@ -475,7 +498,7 @@ class ContentViewController_vatr: UIViewController {
             //  titleLabel.text = titleString.uppercased()
             titleLabel.text = model.name.uppercased()
         } else {
-            titleLabel.isHidden = true
+//            titleLabel.isHidden = true
         }
     }
     

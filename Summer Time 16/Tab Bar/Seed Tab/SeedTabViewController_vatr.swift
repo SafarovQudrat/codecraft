@@ -81,6 +81,9 @@ class SeedTabViewController_vatr: UIViewController {
         }
         
         super.viewDidLoad()
+        Gradient.setupGradient(view: view)
+        settingsButton.layer.masksToBounds = true
+        settingsButton.layer.cornerRadius = 5
         
         configTableView()
 //        setupBackground_vatr()
@@ -90,6 +93,11 @@ class SeedTabViewController_vatr: UIViewController {
         setupRealmObserver_vatr2()
         
     }
+    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        
+//    }
     
     deinit {
         notifictionToken?.invalidate()
@@ -211,7 +219,7 @@ class SeedTabViewController_vatr: UIViewController {
     
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
-        
+        Gradient.setupGradient(view: settingsButton)
         var randofdmDaкerfte: Date {
             let randomTimeInterval = Double.random(in: 0...(365 * 24 * 60 * 60))
             return Date().addingTimeInterval(randomTimeInterval)

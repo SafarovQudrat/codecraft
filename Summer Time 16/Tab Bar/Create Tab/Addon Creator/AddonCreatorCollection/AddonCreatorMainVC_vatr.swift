@@ -60,7 +60,7 @@ class AddonCreatorMainVC_vatr: UIViewController {
                 return (1...5).map { _ in Bool.random() }
             }
         super.viewDidLoad()
-        
+        Gradient.setupGradient(view: view)
         hideKeyboardWhenTappedAround_vatr()
         setupCollectionView_vatr()
         configureUIComponents_vatr()

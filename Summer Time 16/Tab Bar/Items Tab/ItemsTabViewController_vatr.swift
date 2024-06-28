@@ -10,6 +10,7 @@ import RealmSwift
 class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
     // MARK: - Outlets
     
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet private weak var navigationBarContainerView: UIView!
     @IBOutlet private weak var headerLabel: UILabel!
     @IBOutlet private weak var contentCollectionView: UICollectionView!
@@ -161,6 +162,10 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         }
         
         super.viewDidLoad()
+        Gradient.setupGradient(view: view)
+        headerLabel.font = UIFont(name: "Rubik-Bold", size: 26)
+        backBtn.layer.masksToBounds = true
+        backBtn.layer.cornerRadius = 5
         navigationController?.setNavigationBarHidden(true, animated: false)
         setupCollectionView_vatr()
         setupViews_vatr()
@@ -169,6 +174,11 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         tabsPageControllMode = .addons
         setupRealmObserver_vatr2()
     }
+    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        Gradient.setupGradient(view: backBtn)
+//    }
     
     override func viewWillLayoutSubviews() {
         var cpvatr_fzndwhun: Double {
@@ -439,7 +449,7 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
     
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
-        
+        Gradient.setupGradient(view: backBtn)
         func AIBsBUV() {
             var MnWwMvlz: Int = 3
             if MnWwMvlz > 3 {
@@ -791,7 +801,7 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         
         
         let nextVC = SettingsViewController_vatr()
-        navigationController?.pushViewController(nextVC, animated: true)
+        navigationController?.popViewController(animated: true)/*(nextVC, animated: true)*/
     }
     
     
