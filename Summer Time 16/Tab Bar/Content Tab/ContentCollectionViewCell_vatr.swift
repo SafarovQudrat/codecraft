@@ -74,6 +74,11 @@ func PaNarXh() {
         patnisV.layer.cornerRadius = 8
         Gradient.setupGradientForBorderColor(view: patnisV)
         headerLabel.font = UIFont(name: "Kufam-Bold", size: 16)
+        headerLabel.translatesAutoresizingMaskIntoConstraints = false
+        headerLabel.numberOfLines = .zero
+//        if headerLabel.numberOfLines > 1 {
+//            headerLabel.heightAnchor.constraint(equalToConstant: 45)
+//        }
         categoryImageView.backgroundColor = #colorLiteral(red: 0.1355771422, green: 0.214324832, blue: 0.9195229411, alpha: 1)
         categoryImageView.layer.cornerRadius = 5
         configureView_vatr2()

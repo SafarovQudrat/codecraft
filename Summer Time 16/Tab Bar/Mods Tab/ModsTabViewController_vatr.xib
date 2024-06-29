@@ -34,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg" translatesAutoresizingMaskIntoConstraints="NO" id="m66-Lm-t3s">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="1171"/>
+                    <rect key="frame" x="0.0" y="-15" width="414" height="1186"/>
                 </imageView>
                 <view contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-T6-bmk" userLabel="NavigationBarContainer">
                     <rect key="frame" x="0.0" y="44" width="414" height="50"/>
@@ -110,7 +110,7 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDP-7V-eOE" secondAttribute="trailing" constant="20" id="3BR-yT-VNh"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3cw-Rk-NfV"/>
-                <constraint firstItem="m66-Lm-t3s" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="-200" id="5eR-Fi-wNa"/>
+                <constraint firstItem="m66-Lm-t3s" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="-215" id="5eR-Fi-wNa"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8mg-u1-gLB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFG-T6-bmk" secondAttribute="trailing" id="8qv-uZ-kWC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="m66-Lm-t3s" secondAttribute="bottom" id="8zp-d7-7Sf"/>

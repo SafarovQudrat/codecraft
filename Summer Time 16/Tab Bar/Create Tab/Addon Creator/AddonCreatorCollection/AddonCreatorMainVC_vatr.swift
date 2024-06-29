@@ -60,7 +60,7 @@ class AddonCreatorMainVC_vatr: UIViewController {
                 return (1...5).map { _ in Bool.random() }
             }
         super.viewDidLoad()
-        Gradient.setupGradient(view: view)
+//        Gradient.setupGradient(view: view)
         hideKeyboardWhenTappedAround_vatr()
         setupCollectionView_vatr()
         configureUIComponents_vatr()
@@ -68,6 +68,11 @@ class AddonCreatorMainVC_vatr: UIViewController {
         setupCollectionViewUI()
         //updatePageControllerUI()
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        Gradient.setupGradient(view: view)
     }
     
     override func viewWillAppear(_ animated: Bool) {

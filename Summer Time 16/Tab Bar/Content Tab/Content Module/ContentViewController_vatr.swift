@@ -95,7 +95,7 @@ class ContentViewController_vatr: UIViewController {
         }
         
         super.viewDidLoad()
-        Gradient.setupGradient(view: view)
+        
         backImg_vatr.contentMode = .scaleAspectFill
         backImg_vatr.image = UIImage(named: "backImg")
         pageLabel.font = UIFont(name: "Rubik-Medium", size: 20)
@@ -166,7 +166,6 @@ class ContentViewController_vatr: UIViewController {
         //        }
         
     }
-    
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
         
@@ -183,6 +182,7 @@ class ContentViewController_vatr: UIViewController {
         }
         
         super.viewDidLayoutSubviews()
+        Gradient.setupGradient(view: view)
         gradientLayer.frame = view.bounds
     }
     

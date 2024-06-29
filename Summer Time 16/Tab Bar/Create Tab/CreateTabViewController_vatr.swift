@@ -58,7 +58,10 @@ final class CreateTabViewController_vatr: UIViewController {
         }
         
         super.viewDidLoad()
-        configureView_vatr2()
+//        Gradient.setupGradient(view: view)
+        settingsButton.layer.masksToBounds = true
+        settingsButton.layer.cornerRadius = 5
+//        configureView_vatr2()
         setupBackground_vatr()
         setupSearchBar_vatr2()
         updateCollectionForCurrentState_vatr()
@@ -68,6 +71,10 @@ final class CreateTabViewController_vatr: UIViewController {
     }
     // MARK: - Actions
     
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//    }
+//    
     override func viewWillAppear(_ animated: Bool) {
         var cpvatr_atumkrwr: Int {
             return 79
@@ -107,12 +114,13 @@ final class CreateTabViewController_vatr: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        
+        Gradient.setupGradient(view: settingsButton)
         var cpvweratr_hxaltosw: Double {
             return 98.28702681427905
         }
         
         super.viewDidLayoutSubviews()
+        Gradient.setupGradient(view: view)
         self.skinCollectonScreen?.view.frame = self.collectionContainer.bounds
         self.addonCollectionScreen?.view.frame = self.collectionContainer.bounds
         self.skinCollectonScreen?.view.layoutIfNeeded()
@@ -245,7 +253,7 @@ private func navBarSearchMode(predicate: Bool) {
     
     // TODO: - add settings VC
     let nextVC = SettingsViewController_vatr()
-    navigationController?.pushViewController(nextVC, animated: true)
+    navigationController?.popViewController(animated: true)
 }
 
 @IBAction func searchButtonTapped_vatr(_ sender: Any) {

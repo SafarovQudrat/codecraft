@@ -144,7 +144,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         
         super.viewDidLoad()
 //        BackView_did.SetupBackView(view: view)
-        Gradient.setupGradient(view: view)
+//        Gradient.setupGradient(view: view)
         NavBar_vatr.setupNavBar(on: self, btnImg: "back", title: "mods")
         navigationBarContainerView.isHidden = true
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -156,6 +156,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         setupRealmObserver_vatr2()
 //        self.transitioningDelegate = dropDown
     }
+
     
     override func viewWillLayoutSubviews() {
         var cpvatr_ifkpqwag: Double {
@@ -413,6 +414,7 @@ class ModsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         }
         
         super.viewDidLayoutSubviews()
+        Gradient.setupGradient(view: view)
         gradientLayer.frame = view.bounds
     }
     

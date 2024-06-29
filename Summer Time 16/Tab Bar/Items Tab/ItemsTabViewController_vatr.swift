@@ -162,7 +162,7 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         }
         
         super.viewDidLoad()
-        Gradient.setupGradient(view: view)
+//        Gradient.setupGradient(view: view)
         headerLabel.font = UIFont(name: "Rubik-Bold", size: 26)
         backBtn.layer.masksToBounds = true
         backBtn.layer.cornerRadius = 5
@@ -462,6 +462,7 @@ class ItemsTabViewController_vatr: UIViewController, TabBarConfigurable_vatr {
         
         super.viewDidLayoutSubviews()
         gradientLayer.frame = view.bounds
+        Gradient.setupGradient(view: view)
     }
     
     private func setupBackground_vatr() {
@@ -878,6 +879,7 @@ extension ItemsTabViewController_vatr: UICollectionViewDataSource {
         }
         
         cell.headerLabel.text = cellModel.name
+        
         //        cell.newIcon.isHidden = !cellModel.isContentNew
         
         var categoryImage: UIImage {

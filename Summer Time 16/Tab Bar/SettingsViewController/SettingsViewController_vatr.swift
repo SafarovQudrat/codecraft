@@ -68,16 +68,18 @@ func BgdUkL() {
         setupUI_vatr()
         setupActions_vatr()
 //        setupBackground_vatr()
-        Gradient.setupGradient(view: view)
-        Gradient.setupGradient(view: termsContaienr)
-        Gradient.setupGradient(view: privacyContainer)
-        Gradient.setupGradient(view: doneView)
-//        backBtn.backgroundColor = .green
-        Gradient.setupGradient(view: backBtn)
+//        Gradient.setupGradient(view: view)
+//        Gradient.setupGradient(view: termsContaienr)
+//        Gradient.setupGradient(view: privacyContainer)
+//        Gradient.setupGradient(view: doneView)
+////        backBtn.backgroundColor = .green
+//        Gradient.setupGradient(view: backBtn)
         backBtn.bringSubviewToFront(backBtn.imageView!)
         
     }
-    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//    }
     deinit{
         print("SettingsVC is successfully deinited !!")
     }
@@ -154,6 +156,7 @@ func RddfYsmB() {
 
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
+        
 func xCcfO() {
         var UjyBkt: Int = 1
         if UjyBkt > 1 {
@@ -166,6 +169,12 @@ func xCcfO() {
   
             super.viewDidLayoutSubviews()
 //            gradientLayer.frame = view.bounds
+        Gradient.setupGradient(view: view)
+        Gradient.setupGradient(view: termsContaienr)
+        Gradient.setupGradient(view: privacyContainer)
+        Gradient.setupGradient(view: doneView)
+//        backBtn.backgroundColor = .green
+        Gradient.setupGradient(view: backBtn)
         }
     
     private func setupBackground_vatr() {

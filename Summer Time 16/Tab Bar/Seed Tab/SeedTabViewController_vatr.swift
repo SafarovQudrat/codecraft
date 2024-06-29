@@ -81,7 +81,7 @@ class SeedTabViewController_vatr: UIViewController {
         }
         
         super.viewDidLoad()
-        Gradient.setupGradient(view: view)
+//        Gradient.setupGradient(view: view)
         settingsButton.layer.masksToBounds = true
         settingsButton.layer.cornerRadius = 5
         
@@ -226,6 +226,7 @@ class SeedTabViewController_vatr: UIViewController {
         }
         
         super.viewDidLayoutSubviews()
+        Gradient.setupGradient(view: view)
 //        gradientLayer.frame = view.bounds
     }
     

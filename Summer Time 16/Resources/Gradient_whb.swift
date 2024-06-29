@@ -24,7 +24,8 @@ class Gradient {
         ]
         gradient.startPoint = CGPoint(x: 0.5, y: 0)
         gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
-        gradient.frame = view.bounds
+        view.translatesAutoresizingMaskIntoConstraints = false
+//        gradient.translatesAutoresizingMaskIntoConstraints  = false
         view.layer.sublayers?.removeAll(where: { $0 is CAGradientLayer })
         view.layer.insertSublayer(gradient, at: 0)
     }
