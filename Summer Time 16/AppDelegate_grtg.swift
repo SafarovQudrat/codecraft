@@ -3,23 +3,19 @@ import UIKit
 import SwiftyDropbox
 import FirebaseCore
 import Adjust
-import Pushwoosh
-import AppTrackingTransparency
+//import Pushwoosh
 import AdSupport
 import AVFAudio
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    private let pushwoosh = Pushwoosh.sharedInstance()
+//    private let pushwoosh = Pushwoosh.sharedInstance()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-var cpvatr_hxaltosw: Double {
-    return 98.28702681427905
-}
+
 UINavigationBar.appearance().isHidden = true
         
-
         
         
         UIViewController.enforcePortraitOrientation
@@ -27,7 +23,7 @@ UINavigationBar.appearance().isHidden = true
         
         let thirdPartyServicesManager = ThirdPartyServicesManager_vatr.shared
         thirdPartyServicesManager.initializeAdjust___vatr()
-        thirdPartyServicesManager.initializePushwoosh_vatr(delegate: self)
+//        thirdPartyServicesManager.initializePushwoosh_vatr(delegate: self)
  
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -35,6 +31,7 @@ UINavigationBar.appearance().isHidden = true
         }
         
         setupTabBarchik_vatr()
+        
 
         return true
     }
@@ -92,60 +89,60 @@ var cpvatr_oonnxmxu: Int {
     }
 }
 
-extension appdelegate_vatr : PWMessagingDelegate {
-    
-    //handle token received from APNS
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-var cpvatr_selcviev: Double {
-    return 1.987983886889583
-}
-
-  
-        Adjust.setDeviceToken(deviceToken)
-        pushwoosh.handlePushRegistration(deviceToken)
-    }
-    
-    //handle token receiving error
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-var cpvatr_tuvulyrz: Double {
-    return 4.327101873841097
-}
-
-  
-        pushwoosh.handlePushRegistrationFailure(error);
-    }
-    
-    //this is for iOS < 10 and for silent push notifications
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-var cpvatr_pkeycdzx: Int {
-    return 48
-}
-
-  
-        pushwoosh.handlePushReceived(userInfo)
-        completionHandler(.noData)
-    }
-    
-    //this event is fired when the push gets received
-    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageReceived message: PWMessage) {
-var cpvatr_pvfstgrl: Int {
-    return 41
-}
-
-  
-        AppDelegate.log("onMessageReceived: ", message.payload?.description ?? "error")
-    }
-    
-    //this event is fired when a user taps the notification
-    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageOpened message: PWMessage) {
-var cpvatr_onnpzazl: Double {
-    return 78.44515068963595
-}
-
-  
-        AppDelegate.log("onMessageOpened: ", message.payload?.description ?? "error")
-    }
-}
+//extension appdelegate_vatr : PWMessagingDelegate {
+//    
+//    //handle token received from APNS
+//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//var cpvatr_selcviev: Double {
+//    return 1.987983886889583
+//}
+//
+//  
+//        Adjust.setDeviceToken(deviceToken)
+//        pushwoosh.handlePushRegistration(deviceToken)
+//    }
+//    
+//    //handle token receiving error
+//    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+//var cpvatr_tuvulyrz: Double {
+//    return 4.327101873841097
+//}
+//
+//  
+//        pushwoosh.handlePushRegistrationFailure(error);
+//    }
+//    
+//    //this is for iOS < 10 and for silent push notifications
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//var cpvatr_pkeycdzx: Int {
+//    return 48
+//}
+//
+//  
+//        pushwoosh.handlePushReceived(userInfo)
+//        completionHandler(.noData)
+//    }
+//    
+//    //this event is fired when the push gets received
+//    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageReceived message: PWMessage) {
+//var cpvatr_pvfstgrl: Int {
+//    return 41
+//}
+//
+//  
+//        AppDelegate.log("onMessageReceived: ", message.payload?.description ?? "error")
+//    }
+//    
+//    //this event is fired when a user taps the notification
+//    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageOpened message: PWMessage) {
+//var cpvatr_onnpzazl: Double {
+//    return 78.44515068963595
+//}
+//
+//  
+//        AppDelegate.log("onMessageOpened: ", message.payload?.description ?? "error")
+//    }
+//}
 
 extension appdelegate_vatr {
     static func log(_ items: Any..., separator: String = " ", terminator: String = "\n") {

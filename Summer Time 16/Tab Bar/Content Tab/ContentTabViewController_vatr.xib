@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,13 +19,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentTabViewController_vatr" customModule="Summer_Time_16" customModuleProvider="target">
             <connections>
+                <outlet property="addonsButton" destination="zxE-7J-U0Z" id="mCa-ve-mRE"/>
+                <outlet property="btnCollectionView" destination="Q3D-Av-ppz" id="Wgm-pM-f5f"/>
                 <outlet property="contentCollectionView" destination="oq0-Va-xSk" id="VOs-Y5-afc"/>
                 <outlet property="dropDown" destination="qkG-yc-sYW" id="8Z0-hy-UEU"/>
                 <outlet property="emptyLabel" destination="bDP-7V-eOE" id="pWC-vw-5f4"/>
                 <outlet property="headerLabel" destination="Qh3-g6-eWn" id="0v0-f0-LmR"/>
+                <outlet property="mapsButton" destination="Xep-3X-EuO" id="ldv-Cq-5xw"/>
                 <outlet property="navigationBarContainerView" destination="FFG-T6-bmk" id="hmc-Z7-mIm"/>
                 <outlet property="searchBarView" destination="eHs-Sf-Tdp" id="A36-Yc-cic"/>
-                <outlet property="segmentControl" destination="UDF-7h-S90" id="tji-ar-3xy"/>
+                <outlet property="skinsButton" destination="d9M-EG-bPC" id="n0Q-fw-wtu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,21 +37,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg" translatesAutoresizingMaskIntoConstraints="NO" id="SOP-d5-hAf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <view contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-T6-bmk" userLabel="NavigationBarContainer">
                     <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCC-6w-cQF" userLabel="SearchButton">
-                            <rect key="frame" x="354" y="5" width="40" height="40"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="Rd7-Ik-H01"/>
-                                <constraint firstAttribute="width" constant="40" id="gTh-TW-jiO"/>
-                            </constraints>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" backgroundImage="Search Item_vatr"/>
-                            <connections>
-                                <action selector="onNavBarSearchereButtonTapped_vatr:" destination="-1" eventType="touchUpInside" id="qUg-hw-Z6y"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh3-g6-eWn">
                             <rect key="frame" x="148.66666666666666" y="9.3333333333333339" width="116.99999999999997" height="31.333333333333329"/>
                             <fontDescription key="fontDescription" name="Kufam-Bold" family="Kufam" pointSize="24"/>
@@ -65,7 +60,7 @@
                                 <constraint firstAttribute="height" constant="40" id="cZb-hW-O1X"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" backgroundImage="back"/>
+                            <state key="normal" backgroundImage="BackBtnImage"/>
                             <connections>
                                 <action selector="setSettingsBtnTapped_vatr:" destination="-1" eventType="touchUpInside" id="S4l-0J-1xG"/>
                             </connections>
@@ -74,7 +69,6 @@
                     <viewLayoutGuide key="safeArea" id="Iex-kb-vSV"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="JCC-6w-cQF" firstAttribute="centerY" secondItem="Qh3-g6-eWn" secondAttribute="centerY" id="38F-iJ-1x8"/>
                         <constraint firstItem="eHs-Sf-Tdp" firstAttribute="leading" secondItem="FFG-T6-bmk" secondAttribute="leading" constant="16" id="A4q-ok-98f"/>
                         <constraint firstAttribute="height" constant="50" id="EkT-5u-SGB">
                             <variation key="heightClass=regular-widthClass=regular" constant="64"/>
@@ -84,33 +78,35 @@
                         <constraint firstItem="ocf-Q7-C7u" firstAttribute="centerY" secondItem="Iex-kb-vSV" secondAttribute="centerY" id="O6r-jU-RB0"/>
                         <constraint firstAttribute="trailing" secondItem="eHs-Sf-Tdp" secondAttribute="trailing" constant="16" id="QVE-DA-Rcy"/>
                         <constraint firstItem="ocf-Q7-C7u" firstAttribute="centerY" secondItem="Qh3-g6-eWn" secondAttribute="centerY" id="Sqc-Ra-ZVy"/>
-                        <constraint firstAttribute="trailing" secondItem="JCC-6w-cQF" secondAttribute="trailing" constant="20" id="XT2-T0-kh5"/>
-                        <constraint firstItem="JCC-6w-cQF" firstAttribute="centerY" secondItem="Iex-kb-vSV" secondAttribute="centerY" id="jWq-PX-9W3"/>
                         <constraint firstItem="eHs-Sf-Tdp" firstAttribute="top" secondItem="FFG-T6-bmk" secondAttribute="top" constant="5" id="s0u-ZR-baZ"/>
                         <constraint firstItem="ocf-Q7-C7u" firstAttribute="leading" secondItem="Iex-kb-vSV" secondAttribute="leading" constant="20" id="xNW-fZ-eCP"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDF-7h-S90" userLabel="Control 2" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
-                    <rect key="frame" x="20" y="102" width="374" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-yc-sYW">
+                    <rect key="frame" x="20" y="208" width="374" height="46"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q3D-Av-ppz">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WT6-UF-mpc">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="CmL-zt-iwH"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-yc-sYW" customClass="DropDown_vatr" customModule="Summer_Time_16" customModuleProvider="target">
-                    <rect key="frame" x="20" y="162" width="374" height="46"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
+                        <constraint firstItem="Q3D-Av-ppz" firstAttribute="leading" secondItem="qkG-yc-sYW" secondAttribute="leading" id="HxF-7m-FRs"/>
+                        <constraint firstAttribute="trailing" secondItem="Q3D-Av-ppz" secondAttribute="trailing" id="XxQ-jM-dGc"/>
+                        <constraint firstItem="Q3D-Av-ppz" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="top" id="sON-Pf-Fiz"/>
+                        <constraint firstAttribute="bottom" secondItem="Q3D-Av-ppz" secondAttribute="bottom" id="sgj-2g-TQL"/>
                         <constraint firstAttribute="height" constant="46" id="wDj-n2-fbp"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oq0-Va-xSk">
-                    <rect key="frame" x="20" y="228" width="374" height="634"/>
+                    <rect key="frame" x="20" y="274" width="374" height="612"/>
                     <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="9HO-b9-DFF">
                         <size key="itemSize" width="128" height="128"/>
@@ -129,33 +125,102 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKq-nn-0hY" customClass="GradientView" customModule="Summer_Time_16" customModuleProvider="target">
+                    <rect key="frame" x="20" y="104" width="374" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mlm-yK-wdC" customClass="SearchBarView_vatr" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="2" y="2" width="370" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="cGQ-p1-Ie6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Mlm-yK-wdC" firstAttribute="top" secondItem="IKq-nn-0hY" secondAttribute="top" constant="2" id="arL-3R-OaF"/>
+                        <constraint firstItem="Mlm-yK-wdC" firstAttribute="leading" secondItem="IKq-nn-0hY" secondAttribute="leading" constant="2" id="dup-hL-TgY"/>
+                        <constraint firstAttribute="bottom" secondItem="Mlm-yK-wdC" secondAttribute="bottom" constant="2" id="fob-kS-QYr"/>
+                        <constraint firstAttribute="trailing" secondItem="Mlm-yK-wdC" secondAttribute="trailing" constant="2" id="i5i-Te-JJI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XhZ-VR-Omx">
+                    <rect key="frame" x="20" y="154" width="374" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9M-EG-bPC" customClass="ContentGradientButton" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="118" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="VJP-fp-i8E"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxE-7J-U0Z" customClass="ContentGradientButton" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="128" y="0.0" width="118" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="6JK-2e-4tB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xep-3X-EuO" customClass="ContentGradientButton" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="256" y="0.0" width="118" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="KTd-vZ-pW6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gVj-cP-Wjw"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SOP-d5-hAf" secondAttribute="trailing" id="0XJ-7N-BRf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDP-7V-eOE" secondAttribute="trailing" constant="20" id="3BR-yT-VNh"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3cw-Rk-NfV"/>
+                <constraint firstItem="SOP-d5-hAf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6PM-bf-gM8"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8mg-u1-gLB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFG-T6-bmk" secondAttribute="trailing" id="8qv-uZ-kWC"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="CJt-m6-Yk6"/>
+                <constraint firstItem="qkG-yc-sYW" firstAttribute="top" secondItem="XhZ-VR-Omx" secondAttribute="bottom" constant="10" id="GLC-y8-OWb"/>
+                <constraint firstItem="IKq-nn-0hY" firstAttribute="top" secondItem="FFG-T6-bmk" secondAttribute="bottom" constant="10" id="PUt-f9-yq8"/>
+                <constraint firstAttribute="bottom" secondItem="SOP-d5-hAf" secondAttribute="bottom" id="Vv9-bL-M1J"/>
                 <constraint firstItem="bDP-7V-eOE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Wwe-XX-v6N"/>
                 <constraint firstItem="oq0-Va-xSk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XMz-1I-mYg"/>
-                <constraint firstItem="UDF-7h-S90" firstAttribute="top" secondItem="FFG-T6-bmk" secondAttribute="bottom" constant="8" symbolic="YES" id="elV-gC-9uR"/>
-                <constraint firstItem="UDF-7h-S90" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fjb-1D-wol"/>
-                <constraint firstItem="qkG-yc-sYW" firstAttribute="top" secondItem="UDF-7h-S90" secondAttribute="bottom" constant="20" id="gRc-ND-kVo"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oq0-Va-xSk" secondAttribute="bottom" id="hcC-8l-eX6"/>
+                <constraint firstItem="IKq-nn-0hY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="YtG-Hd-xLZ"/>
+                <constraint firstItem="XhZ-VR-Omx" firstAttribute="top" secondItem="IKq-nn-0hY" secondAttribute="bottom" constant="10" id="adI-wS-wP7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XhZ-VR-Omx" secondAttribute="trailing" constant="20" id="bWd-3g-pcp"/>
                 <constraint firstItem="FFG-T6-bmk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k5V-AZ-ead"/>
+                <constraint firstItem="SOP-d5-hAf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kUd-L1-qQ0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oq0-Va-xSk" secondAttribute="trailing" constant="20" id="kXv-cI-0jW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UDF-7h-S90" secondAttribute="trailing" constant="20" id="mwG-DN-sue"/>
                 <constraint firstItem="qkG-yc-sYW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rRL-tz-vTI"/>
+                <constraint firstAttribute="bottom" secondItem="oq0-Va-xSk" secondAttribute="bottom" constant="10" id="tXW-N4-lm8"/>
                 <constraint firstItem="oq0-Va-xSk" firstAttribute="top" secondItem="qkG-yc-sYW" secondAttribute="bottom" constant="20" id="vxK-KO-0TO"/>
+                <constraint firstItem="XhZ-VR-Omx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="y44-dZ-od7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qkG-yc-sYW" secondAttribute="trailing" constant="20" id="yuq-rT-Bs5"/>
+                <constraint firstItem="IKq-nn-0hY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ywJ-bY-o7Y"/>
             </constraints>
             <point key="canvasLocation" x="104.34782608695653" y="18.080357142857142"/>
         </view>
     </objects>
     <resources>
-        <image name="Search Item_vatr" width="40" height="40"/>
-        <image name="back" width="92" height="91"/>
+        <image name="BackBtnImage" width="96" height="96"/>
+        <image name="backImg" width="1082" height="1624"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

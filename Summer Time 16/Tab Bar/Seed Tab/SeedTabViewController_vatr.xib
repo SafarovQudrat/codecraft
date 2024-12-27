@@ -9,18 +9,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Kufam-Bold.ttf">
-            <string>Kufam-Bold</string>
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeedTabViewController_vatr" customModule="Summer_Time_16" customModuleProvider="target">
             <connections>
+                <outlet property="btnCollectionView" destination="cam-2O-24C" id="fs0-pt-LM5"/>
                 <outlet property="collectionView" destination="Erk-Ue-Tlz" id="hFQ-ov-Knf"/>
                 <outlet property="emptyLabel" destination="ym9-d1-m1K" id="x61-JT-cqh"/>
                 <outlet property="navigationBarContainerView" destination="RP9-ab-gd5" id="SAr-Gy-syx"/>
                 <outlet property="searchBarView" destination="Bg2-FP-n9W" id="TZf-B9-0bF"/>
                 <outlet property="settingsButton" destination="5RU-uN-kbA" id="n7T-RI-253"/>
+                <outlet property="shaders" destination="uRx-dj-b9h" id="Qcw-kB-lZM"/>
                 <outlet property="view" destination="t0o-Ph-iOV" id="Sfq-g3-r46"/>
             </connections>
         </placeholder>
@@ -63,8 +65,8 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="50"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHADERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRx-dj-b9h">
-                            <rect key="frame" x="138.33333333333334" y="8" width="116.33333333333334" height="34"/>
-                            <fontDescription key="fontDescription" name="Kufam-Bold" family="Kufam" pointSize="24"/>
+                            <rect key="frame" x="133.66666666666666" y="8" width="125.66666666666666" height="34"/>
+                            <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="26"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -95,15 +97,32 @@
                         <constraint firstItem="5RU-uN-kbA" firstAttribute="leading" secondItem="LfE-aC-PVj" secondAttribute="leading" constant="20" id="raO-LN-pA5"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-FP-n9W" customClass="SearchBarView_vatr" customModule="Summer_Time_16" customModuleProvider="target">
-                    <rect key="frame" x="18" y="125" width="357" height="40"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlm-fb-btP" customClass="GradientView" customModule="Summer_Time_16" customModuleProvider="target">
+                    <rect key="frame" x="18" y="119" width="357" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-FP-n9W" customClass="SearchBarView_vatr" customModule="Summer_Time_16" customModuleProvider="target">
+                            <rect key="frame" x="2" y="2" width="353" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="PsB-8d-bId"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="PsB-8d-bId"/>
+                        <constraint firstItem="Bg2-FP-n9W" firstAttribute="leading" secondItem="Rlm-fb-btP" secondAttribute="leading" constant="2" id="AAo-z5-vJv"/>
+                        <constraint firstItem="Bg2-FP-n9W" firstAttribute="top" secondItem="Rlm-fb-btP" secondAttribute="top" constant="2" id="R3g-Pg-91D"/>
+                        <constraint firstAttribute="bottom" secondItem="Bg2-FP-n9W" secondAttribute="bottom" constant="2" id="SBf-wx-soz"/>
+                        <constraint firstAttribute="trailing" secondItem="Bg2-FP-n9W" secondAttribute="trailing" constant="2" id="zWX-5g-Wxk"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Erk-Ue-Tlz">
-                    <rect key="frame" x="20" y="181" width="353" height="637"/>
+                    <rect key="frame" x="20" y="231" width="353" height="611"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="73N-G5-moK">
                         <size key="itemSize" width="128" height="128"/>
@@ -118,29 +137,55 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQU-dV-D7S">
+                    <rect key="frame" x="18" y="169" width="357" height="46"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cam-2O-24C">
+                            <rect key="frame" x="0.0" y="0.0" width="357" height="46"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IOk-D2-4Bc">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cam-2O-24C" secondAttribute="trailing" id="AzO-TE-nFq"/>
+                        <constraint firstItem="cam-2O-24C" firstAttribute="leading" secondItem="nQU-dV-D7S" secondAttribute="leading" id="FLz-YO-ljQ"/>
+                        <constraint firstItem="cam-2O-24C" firstAttribute="top" secondItem="nQU-dV-D7S" secondAttribute="top" id="Wbn-s1-Ilh"/>
+                        <constraint firstAttribute="height" constant="46" id="Yg4-LG-Ue4"/>
+                        <constraint firstAttribute="bottom" secondItem="cam-2O-24C" secondAttribute="bottom" id="w1k-ba-r32"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vw3-hw-cdh"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vw3-hw-cdh" firstAttribute="trailing" secondItem="Bg2-FP-n9W" secondAttribute="trailing" constant="18" id="0Nu-vR-eDl"/>
                 <constraint firstItem="RP9-ab-gd5" firstAttribute="top" secondItem="vw3-hw-cdh" secondAttribute="top" id="1Qg-Mn-Zqm"/>
                 <constraint firstItem="6v4-dk-P0z" firstAttribute="trailing" secondItem="vw3-hw-cdh" secondAttribute="trailing" id="1TT-el-OkE"/>
                 <constraint firstItem="ym9-d1-m1K" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" constant="40" id="1UH-KU-1Ry"/>
                 <constraint firstItem="RP9-ab-gd5" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" id="4OU-w9-fic"/>
-                <constraint firstItem="Erk-Ue-Tlz" firstAttribute="top" secondItem="Bg2-FP-n9W" secondAttribute="bottom" constant="16" id="6iQ-2v-NO6"/>
+                <constraint firstItem="nQU-dV-D7S" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" constant="18" id="6QT-cv-VSI"/>
                 <constraint firstItem="X4b-3v-k7k" firstAttribute="centerY" secondItem="vw3-hw-cdh" secondAttribute="centerY" id="A3S-Gy-7PS"/>
-                <constraint firstItem="Bg2-FP-n9W" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" constant="18" id="ATR-ra-mnw"/>
                 <constraint firstItem="RP9-ab-gd5" firstAttribute="trailing" secondItem="vw3-hw-cdh" secondAttribute="trailing" id="BEC-UW-sCs"/>
+                <constraint firstItem="Rlm-fb-btP" firstAttribute="leading" secondItem="t0o-Ph-iOV" secondAttribute="leading" constant="18" id="HJ2-YL-MbM"/>
                 <constraint firstItem="ym9-d1-m1K" firstAttribute="centerY" secondItem="vw3-hw-cdh" secondAttribute="centerY" id="L9G-uH-trM"/>
                 <constraint firstItem="Erk-Ue-Tlz" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" constant="20" id="LEX-NG-gRT"/>
-                <constraint firstItem="Bg2-FP-n9W" firstAttribute="top" secondItem="RP9-ab-gd5" secondAttribute="bottom" constant="16" id="OkK-vl-1FZ"/>
+                <constraint firstItem="vw3-hw-cdh" firstAttribute="trailing" secondItem="nQU-dV-D7S" secondAttribute="trailing" constant="18" id="PNf-ZR-obL"/>
                 <constraint firstItem="vw3-hw-cdh" firstAttribute="trailing" secondItem="X4b-3v-k7k" secondAttribute="trailing" constant="20" id="Thd-wP-GtV"/>
                 <constraint firstItem="6v4-dk-P0z" firstAttribute="top" secondItem="t0o-Ph-iOV" secondAttribute="top" id="WaO-22-ecN"/>
                 <constraint firstItem="vw3-hw-cdh" firstAttribute="leading" secondItem="X4b-3v-k7k" secondAttribute="leading" constant="20" id="WpI-gp-Air"/>
+                <constraint firstItem="Rlm-fb-btP" firstAttribute="top" secondItem="RP9-ab-gd5" secondAttribute="bottom" constant="10" id="YqW-zk-Iq0"/>
+                <constraint firstItem="nQU-dV-D7S" firstAttribute="top" secondItem="Rlm-fb-btP" secondAttribute="bottom" constant="10" id="Zei-HP-eL9"/>
                 <constraint firstAttribute="bottom" secondItem="6v4-dk-P0z" secondAttribute="bottom" id="aqb-Kd-iJE"/>
                 <constraint firstItem="vw3-hw-cdh" firstAttribute="trailing" secondItem="ym9-d1-m1K" secondAttribute="trailing" constant="40" id="gSm-Ds-i5x"/>
-                <constraint firstItem="vw3-hw-cdh" firstAttribute="bottom" secondItem="Erk-Ue-Tlz" secondAttribute="bottom" id="oNU-Wv-tcM"/>
+                <constraint firstAttribute="trailing" secondItem="Rlm-fb-btP" secondAttribute="trailing" constant="18" id="isu-DI-8qz"/>
+                <constraint firstAttribute="bottom" secondItem="Erk-Ue-Tlz" secondAttribute="bottom" constant="10" id="oNU-Wv-tcM"/>
                 <constraint firstItem="vw3-hw-cdh" firstAttribute="trailing" secondItem="Erk-Ue-Tlz" secondAttribute="trailing" constant="20" id="r7i-kZ-Rzt"/>
+                <constraint firstItem="Erk-Ue-Tlz" firstAttribute="top" secondItem="nQU-dV-D7S" secondAttribute="bottom" constant="16" id="rEk-v3-eeo"/>
                 <constraint firstItem="6v4-dk-P0z" firstAttribute="leading" secondItem="vw3-hw-cdh" secondAttribute="leading" id="xXX-VP-o6A"/>
             </constraints>
             <variation key="default">

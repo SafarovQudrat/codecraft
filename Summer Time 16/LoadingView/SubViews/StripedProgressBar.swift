@@ -16,7 +16,7 @@ class StripedProgressBar: UIView {
         }
     }
     
-    private let stripeColor = UIColor.blue
+    private let stripeColor = #colorLiteral(red: 0.02204312943, green: 0.2830651104, blue: 0.9539406896, alpha: 1)
     private let progressBarBackgroundColor = UIColor.white
     
     override func draw(_ rect: CGRect) {
@@ -34,8 +34,8 @@ class StripedProgressBar: UIView {
         context?.fill(progressRect)
         
         // Draw stripes
-        let stripeWidth: CGFloat = 12.0
-        let stripeSpacing: CGFloat = 12.0
+        let stripeWidth: CGFloat = 9.0
+        let stripeSpacing: CGFloat = 13.0
         context?.setLineWidth(stripeWidth)
         context?.setStrokeColor(UIColor.white.cgColor)
         

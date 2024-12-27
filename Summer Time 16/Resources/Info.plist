@@ -25,8 +25,6 @@
 	</array>
 	<key>PW_APP_GROUPS_NAME</key>
 	<string>group.app.soft-it.development</string>
-	<key>Pushwoosh_APPID</key>
-	<string>4BD71-A4B2C</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>

@@ -60,9 +60,9 @@ func vjWvVqeI() {
         dropDown.didSelect_vatr { [weak self] selectedText, index, _ in
             guard let self else { return }
             switch dropDownOptions[index] {
-            case "All":
+            case NSLocalizedString("all", comment: ""):
                 filteredItems = items
-            case "Favorites":
+            case NSLocalizedString("favorites", comment: ""):
                 filteredItems = items.filter(\.isFavorite)
             default:
                 break
@@ -81,6 +81,6 @@ extension ModsTabBarViewController: TabBarConfigurable_vatr {
     }
 
     var tabBarTitle: String {
-        return "Mods"
+        return NSLocalizedString("mods", comment: "")
     }
 }

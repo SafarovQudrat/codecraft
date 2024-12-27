@@ -12,6 +12,49 @@
 		000451D12C24BB9D001CC1C0 /* StripedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000451D02C24BB9D001CC1C0 /* StripedProgressBar.swift */; };
 		000451D32C24C58C001CC1C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000451D22C24C58C001CC1C0 /* MainViewController.swift */; };
 		001C82BE2C2C2A8A00185205 /* GradientView_Wert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C82BD2C2C2A8A00185205 /* GradientView_Wert.swift */; };
+		00233FE92C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F932C5AAE31001A6906 /* Localizable.strings */; };
+		00233FEA2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F952C5AAE31001A6906 /* Localizable.strings */; };
+		00233FEB2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F972C5AAE31001A6906 /* Localizable.strings */; };
+		00233FEC2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F992C5AAE31001A6906 /* Localizable.strings */; };
+		00233FED2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F9B2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FEE2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F9D2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FEF2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233F9F2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF02C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FA12C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF12C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FA32C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF22C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FA52C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF32C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FA72C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF42C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FA92C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF52C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FAB2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF62C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FAD2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF72C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FAF2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF82C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FB12C5AAE31001A6906 /* Localizable.strings */; };
+		00233FF92C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FB32C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFA2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FB52C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFB2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FB72C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFC2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FB92C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFD2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FBB2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFE2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FBD2C5AAE31001A6906 /* Localizable.strings */; };
+		00233FFF2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FBF2C5AAE31001A6906 /* Localizable.strings */; };
+		002340002C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FC12C5AAE31001A6906 /* Localizable.strings */; };
+		002340012C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FC32C5AAE31001A6906 /* Localizable.strings */; };
+		002340022C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FC52C5AAE31001A6906 /* Localizable.strings */; };
+		002340032C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FC72C5AAE31001A6906 /* Localizable.strings */; };
+		002340042C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FC92C5AAE31001A6906 /* Localizable.strings */; };
+		002340052C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FCB2C5AAE31001A6906 /* Localizable.strings */; };
+		002340062C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FCD2C5AAE31001A6906 /* Localizable.strings */; };
+		002340072C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FCF2C5AAE31001A6906 /* Localizable.strings */; };
+		002340082C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FD12C5AAE31001A6906 /* Localizable.strings */; };
+		002340092C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FD32C5AAE31001A6906 /* Localizable.strings */; };
+		0023400A2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FD52C5AAE31001A6906 /* Localizable.strings */; };
+		0023400B2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FD72C5AAE31001A6906 /* Localizable.strings */; };
+		0023400C2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FD92C5AAE31001A6906 /* Localizable.strings */; };
+		0023400D2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FDB2C5AAE31001A6906 /* Localizable.strings */; };
+		0023400E2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FDD2C5AAE31001A6906 /* Localizable.strings */; };
+		0023400F2C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FDF2C5AAE31001A6906 /* Localizable.strings */; };
+		002340102C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FE12C5AAE31001A6906 /* Localizable.strings */; };
+		002340112C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FE32C5AAE31001A6906 /* Localizable.strings */; };
+		002340122C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FE52C5AAE31001A6906 /* Localizable.strings */; };
+		002340132C5AAE31001A6906 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00233FE72C5AAE31001A6906 /* Localizable.strings */; };
 		0304BBF92A9798EB00D75017 /* SearchSuggestionCell_vatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304BBF72A9798EB00D75017 /* SearchSuggestionCell_vatr.swift */; };
 		0304BBFA2A9798EB00D75017 /* SearchSuggestionCell_vatr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0304BBF82A9798EB00D75017 /* SearchSuggestionCell_vatr.xib */; };
 		031D10B72ADD2B98006B3063 /* rewraCategoryOptionHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031D10B62ADD2B98006B3063 /* rewraCategoryOptionHeaderSection.swift */; };
@@ -62,6 +105,15 @@
 		1C2983C82A5EADAA00E936BA /* egreAddonsOptionsCellWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2983C52A5EADAA00E936BA /* egreAddonsOptionsCellWithTextField.swift */; };
 		1C2983C92A5EADAA00E936BA /* erfecdAddonsOptionsCellWithSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2983C62A5EADAA00E936BA /* erfecdAddonsOptionsCellWithSwitcher.swift */; };
 		1C2983CC2A5EADE500E936BA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2983CB2A5EADE500E936BA /* PinLayout */; };
+		30069D462C34701C002CAA20 /* NewSkinCreatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30069D442C34701C002CAA20 /* NewSkinCreatorCell.swift */; };
+		30069D472C34701C002CAA20 /* NewSkinCreatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30069D452C34701C002CAA20 /* NewSkinCreatorCell.xib */; };
+		30069D492C347B89002CAA20 /* Ex+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30069D482C347B89002CAA20 /* Ex+UIView.swift */; };
+		30069D562C359E5D002CAA20 /* SkinEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30069D542C359E5D002CAA20 /* SkinEditorVC.swift */; };
+		30069D572C359E5D002CAA20 /* SkinEditorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30069D552C359E5D002CAA20 /* SkinEditorVC.xib */; };
+		30181F552C3D9C6E00D46A81 /* ColorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30181F542C3D9C6D00D46A81 /* ColorsVC.swift */; };
+		3059A2C22C38FFDC00C4C6FF /* BtnCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A2C02C38FFDC00C4C6FF /* BtnCollectionCell.swift */; };
+		3059A2C32C38FFDC00C4C6FF /* BtnCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3059A2C12C38FFDC00C4C6FF /* BtnCollectionCell.xib */; };
+		3059A2C52C39B61200C4C6FF /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3059A2C42C39B61200C4C6FF /* CustomAlert.swift */; };
 		42095E722B9A5967008046B2 /* rtrg_ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42095E712B9A5967008046B2 /* rtrg_ServicesManager.swift */; };
 		42095E732B9A5A37008046B2 /* NetworkStatusMonitor_reefg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351662D2AFA3F0900035087 /* NetworkStatusMonitor_reefg.swift */; };
 		42197FF72B56AD60008D3C77 /* ItemsTabViewController_vatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42197FF62B56AD60008D3C77 /* ItemsTabViewController_vatr.swift */; };
@@ -156,7 +208,6 @@
 		63BCE0E72AE01C5F005B1608 /* tdfgSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCE0E62AE01C5F005B1608 /* tdfgSettingsModel.swift */; };
 		63BEA8E22AAB22E2006F825F /* lkojExtension_AddonEditor3DViewController+CollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEA8E12AAB22E2006F825F /* lkojExtension_AddonEditor3DViewController+CollectionDelegate.swift */; };
 		63CC9B352A5CB0C900136801 /* SsvedAddonCollectionCell_vatr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9B332A5CB0C900136801 /* SsvedAddonCollectionCell_vatr.swift */; };
-		63E876732A2A0C6B00B486B1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 63E876722A2A0C6B00B486B1 /* Realm */; };
 		63E876752A2A0C6B00B486B1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 63E876742A2A0C6B00B486B1 /* RealmSwift */; };
 		63EE81AD2A581362005BE8E7 /* AddonEditorViewController_vatr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EE81AB2A581362005BE8E7 /* AddonEditorViewController_vatr.xib */; };
 		63F971D62A3721EB005D102E /* BodyPartPickerViewController_vatr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F971D52A3721EA005D102E /* BodyPartPickerViewController_vatr.xib */; };
@@ -347,6 +398,49 @@
 		000451D02C24BB9D001CC1C0 /* StripedProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripedProgressBar.swift; sourceTree = "<group>"; };
 		000451D22C24C58C001CC1C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		001C82BD2C2C2A8A00185205 /* GradientView_Wert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView_Wert.swift; sourceTree = "<group>"; };
+		00233F922C5AAE31001A6906 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233F942C5AAE31001A6906 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233F962C5AAE31001A6906 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233F982C5AAE31001A6906 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233F9A2C5AAE31001A6906 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233F9C2C5AAE31001A6906 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233F9E2C5AAE31001A6906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FA02C5AAE31001A6906 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FA22C5AAE31001A6906 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FA42C5AAE31001A6906 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FA62C5AAE31001A6906 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FA82C5AAE31001A6906 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FAA2C5AAE31001A6906 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FAC2C5AAE31001A6906 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FAE2C5AAE31001A6906 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FB02C5AAE31001A6906 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FB22C5AAE31001A6906 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FB42C5AAE31001A6906 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FB62C5AAE31001A6906 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FB82C5AAE31001A6906 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FBA2C5AAE31001A6906 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FBC2C5AAE31001A6906 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FBE2C5AAE31001A6906 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FC02C5AAE31001A6906 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FC22C5AAE31001A6906 /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FC42C5AAE31001A6906 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FC62C5AAE31001A6906 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FC82C5AAE31001A6906 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FCA2C5AAE31001A6906 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FCC2C5AAE31001A6906 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FCE2C5AAE31001A6906 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FD02C5AAE31001A6906 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FD22C5AAE31001A6906 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FD42C5AAE31001A6906 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FD62C5AAE31001A6906 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FD82C5AAE31001A6906 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FDA2C5AAE31001A6906 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FDC2C5AAE31001A6906 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00233FDE2C5AAE31001A6906 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FE02C5AAE31001A6906 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FE22C5AAE31001A6906 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FE42C5AAE31001A6906 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00233FE62C5AAE31001A6906 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0304BBF72A9798EB00D75017 /* SearchSuggestionCell_vatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestionCell_vatr.swift; sourceTree = "<group>"; };
 		0304BBF82A9798EB00D75017 /* SearchSuggestionCell_vatr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSuggestionCell_vatr.xib; sourceTree = "<group>"; };
 		031D10B62ADD2B98006B3063 /* rewraCategoryOptionHeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rewraCategoryOptionHeaderSection.swift; sourceTree = "<group>"; };
@@ -354,7 +448,6 @@
 		0338479E2A9CB41700A55021 /* DownloadContnetViewController_vatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadContnetViewController_vatr.swift; sourceTree = "<group>"; };
 		0338479F2A9CB41700A55021 /* DownloadContnetViewController_vatr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadContnetViewController_vatr.xib; sourceTree = "<group>"; };
 		033847A52A9CBE9A00A55021 /* arfrgDocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arfrgDocumentPicker.swift; sourceTree = "<group>"; };
-		03435CC72B04C91B00423598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03435CC92B04F6A200423598 /* wefUIColor+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "wefUIColor+Equatable.swift"; sourceTree = "<group>"; };
 		0351662A2AFA3F0900035087 /* erferfew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = erferfew.swift; sourceTree = "<group>"; };
 		0351662D2AFA3F0900035087 /* NetworkStatusMonitor_reefg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusMonitor_reefg.swift; sourceTree = "<group>"; };
@@ -400,6 +493,15 @@
 		1C2983C42A5EADAA00E936BA /* tr45AddonsOptionsContainerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tr45AddonsOptionsContainerCell.swift; sourceTree = "<group>"; };
 		1C2983C52A5EADAA00E936BA /* egreAddonsOptionsCellWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = egreAddonsOptionsCellWithTextField.swift; sourceTree = "<group>"; };
 		1C2983C62A5EADAA00E936BA /* erfecdAddonsOptionsCellWithSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = erfecdAddonsOptionsCellWithSwitcher.swift; sourceTree = "<group>"; };
+		30069D442C34701C002CAA20 /* NewSkinCreatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSkinCreatorCell.swift; sourceTree = "<group>"; };
+		30069D452C34701C002CAA20 /* NewSkinCreatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewSkinCreatorCell.xib; sourceTree = "<group>"; };
+		30069D482C347B89002CAA20 /* Ex+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIView.swift"; sourceTree = "<group>"; };
+		30069D542C359E5D002CAA20 /* SkinEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinEditorVC.swift; sourceTree = "<group>"; };
+		30069D552C359E5D002CAA20 /* SkinEditorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkinEditorVC.xib; sourceTree = "<group>"; };
+		30181F542C3D9C6D00D46A81 /* ColorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsVC.swift; sourceTree = "<group>"; };
+		3059A2C02C38FFDC00C4C6FF /* BtnCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnCollectionCell.swift; sourceTree = "<group>"; };
+		3059A2C12C38FFDC00C4C6FF /* BtnCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnCollectionCell.xib; sourceTree = "<group>"; };
+		3059A2C42C39B61200C4C6FF /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		42095E712B9A5967008046B2 /* rtrg_ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rtrg_ServicesManager.swift; sourceTree = "<group>"; };
 		42197FF62B56AD60008D3C77 /* ItemsTabViewController_vatr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTabViewController_vatr.swift; sourceTree = "<group>"; };
 		42197FF82B56ADA5008D3C77 /* ItemsTabViewController_vatr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsTabViewController_vatr.xib; sourceTree = "<group>"; };
@@ -660,7 +762,6 @@
 				D707055E2A6055890098A501 /* Adjust in Frameworks */,
 				1C2983CC2A5EADE500E936BA /* PinLayout in Frameworks */,
 				6FA9FCCE2A4ECD6A001A1CD6 /* FirebaseFirestore in Frameworks */,
-				63E876732A2A0C6B00B486B1 /* Realm in Frameworks */,
 				6FA9FCC82A4ECD6A001A1CD6 /* FirebaseAnalyticsSwift in Frameworks */,
 				6FA9FCC42A4ECD6A001A1CD6 /* FirebaseAnalytics in Frameworks */,
 				D707055B2A6055060098A501 /* Zip in Frameworks */,
@@ -691,6 +792,57 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		00233FE82C5AAE31001A6906 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				00233F932C5AAE31001A6906 /* Localizable.strings */,
+				00233F952C5AAE31001A6906 /* Localizable.strings */,
+				00233F972C5AAE31001A6906 /* Localizable.strings */,
+				00233F992C5AAE31001A6906 /* Localizable.strings */,
+				00233F9B2C5AAE31001A6906 /* Localizable.strings */,
+				00233F9D2C5AAE31001A6906 /* Localizable.strings */,
+				00233F9F2C5AAE31001A6906 /* Localizable.strings */,
+				00233FA12C5AAE31001A6906 /* Localizable.strings */,
+				00233FA32C5AAE31001A6906 /* Localizable.strings */,
+				00233FA52C5AAE31001A6906 /* Localizable.strings */,
+				00233FA72C5AAE31001A6906 /* Localizable.strings */,
+				00233FA92C5AAE31001A6906 /* Localizable.strings */,
+				00233FAB2C5AAE31001A6906 /* Localizable.strings */,
+				00233FAD2C5AAE31001A6906 /* Localizable.strings */,
+				00233FAF2C5AAE31001A6906 /* Localizable.strings */,
+				00233FB12C5AAE31001A6906 /* Localizable.strings */,
+				00233FB32C5AAE31001A6906 /* Localizable.strings */,
+				00233FB52C5AAE31001A6906 /* Localizable.strings */,
+				00233FB72C5AAE31001A6906 /* Localizable.strings */,
+				00233FB92C5AAE31001A6906 /* Localizable.strings */,
+				00233FBB2C5AAE31001A6906 /* Localizable.strings */,
+				00233FBD2C5AAE31001A6906 /* Localizable.strings */,
+				00233FBF2C5AAE31001A6906 /* Localizable.strings */,
+				00233FC12C5AAE31001A6906 /* Localizable.strings */,
+				00233FC32C5AAE31001A6906 /* Localizable.strings */,
+				00233FC52C5AAE31001A6906 /* Localizable.strings */,
+				00233FC72C5AAE31001A6906 /* Localizable.strings */,
+				00233FC92C5AAE31001A6906 /* Localizable.strings */,
+				00233FCB2C5AAE31001A6906 /* Localizable.strings */,
+				00233FCD2C5AAE31001A6906 /* Localizable.strings */,
+				00233FCF2C5AAE31001A6906 /* Localizable.strings */,
+				00233FD12C5AAE31001A6906 /* Localizable.strings */,
+				00233FD32C5AAE31001A6906 /* Localizable.strings */,
+				00233FD52C5AAE31001A6906 /* Localizable.strings */,
+				00233FD72C5AAE31001A6906 /* Localizable.strings */,
+				00233FD92C5AAE31001A6906 /* Localizable.strings */,
+				00233FDB2C5AAE31001A6906 /* Localizable.strings */,
+				00233FDD2C5AAE31001A6906 /* Localizable.strings */,
+				00233FDF2C5AAE31001A6906 /* Localizable.strings */,
+				00233FE12C5AAE31001A6906 /* Localizable.strings */,
+				00233FE32C5AAE31001A6906 /* Localizable.strings */,
+				00233FE52C5AAE31001A6906 /* Localizable.strings */,
+				00233FE72C5AAE31001A6906 /* Localizable.strings */,
+			);
+			name = Localizable;
+			path = "Summer Time 16/Tab Bar/Localizable";
+			sourceTree = "<group>";
+		};
 		0304BBF62A9798B900D75017 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +869,7 @@
 			isa = PBXGroup;
 			children = (
 				0351662A2AFA3F0900035087 /* erferfew.swift */,
+				3059A2C42C39B61200C4C6FF /* CustomAlert.swift */,
 			);
 			name = extensions;
 			path = Flow/extensions;
@@ -821,6 +974,44 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		30069D3E2C346EB8002CAA20 /* SkinCreatorNewCell */ = {
+			isa = PBXGroup;
+			children = (
+				30069D442C34701C002CAA20 /* NewSkinCreatorCell.swift */,
+				30069D452C34701C002CAA20 /* NewSkinCreatorCell.xib */,
+			);
+			path = SkinCreatorNewCell;
+			sourceTree = "<group>";
+		};
+		30069D4C2C357FEE002CAA20 /* BIn */ = {
+			isa = PBXGroup;
+			children = (
+				63A076322A3348DC00843EE6 /* ListOfCreatedSkinsController */,
+				03A54F8B2AD5977200F10AA5 /* SkinCreatorMain */,
+			);
+			path = BIn;
+			sourceTree = "<group>";
+		};
+		30069D4F2C359C12002CAA20 /* SkinEditor */ = {
+			isa = PBXGroup;
+			children = (
+				30069D542C359E5D002CAA20 /* SkinEditorVC.swift */,
+				30069D552C359E5D002CAA20 /* SkinEditorVC.xib */,
+				F4ADA9362A0A6A1F009A2756 /* SkinCreator2D */,
+				63A85E9B2A33476C005586FE /* Skin3DCreator */,
+			);
+			path = SkinEditor;
+			sourceTree = "<group>";
+		};
+		3059A2BF2C38FFBC00C4C6FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3059A2C02C38FFDC00C4C6FF /* BtnCollectionCell.swift */,
+				3059A2C12C38FFDC00C4C6FF /* BtnCollectionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		422C6D452B50226A00453C6A /* Items Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,6 +1034,7 @@
 		4269ECCA2B4C08EF00018B0F /* Mods Tab */ = {
 			isa = PBXGroup;
 			children = (
+				3059A2BF2C38FFBC00C4C6FF /* Cell */,
 				42197FFE2B56EC97008D3C77 /* ModsTabViewController_vatr.swift */,
 				421980022B56EE3A008D3C77 /* ModsTabViewController_vatr.xib */,
 				4269ECC82B4C08E800018B0F /* vhhjModsTabBarViewController.swift */,
@@ -1000,8 +1192,6 @@
 				F41F6D0C2A21078500F72851 /* SkinEditorViewController_vatr.swift */,
 				F41F6D0D2A21078500F72851 /* SkinEditorViewController_vatr.xib */,
 				63F971D82A372481005D102E /* PopUPController */,
-				F4ADA9362A0A6A1F009A2756 /* SkinCreator2D */,
-				63A85E9B2A33476C005586FE /* Skin3DCreator */,
 				F40415D42A126C0900066473 /* PixelCreator */,
 			);
 			path = ListOfCreatedSkinsController;
@@ -1021,8 +1211,7 @@
 		63A5DFD82A334A360037D65B /* SkinsCreator */ = {
 			isa = PBXGroup;
 			children = (
-				03A54F8B2AD5977200F10AA5 /* SkinCreatorMain */,
-				63A076322A3348DC00843EE6 /* ListOfCreatedSkinsController */,
+				30069D3E2C346EB8002CAA20 /* SkinCreatorNewCell */,
 			);
 			path = SkinsCreator;
 			sourceTree = "<group>";
@@ -1186,6 +1375,7 @@
 				63A5DFDC2A3353480037D65B /* CustomViews */,
 				F4ADA9372A0A6A46009A2756 /* SkinCreatorViewController_vatr.swift */,
 				F4ADA9382A0A6A46009A2756 /* SkinCreatorViewController_vatr.xib */,
+				30181F542C3D9C6D00D46A81 /* ColorsVC.swift */,
 				F428B9262A137D21005D575F /* SkinCreatorViewController+PixelView_vatr.swift */,
 				632471FB2A77AACA009CD1C3 /* argrgSkinCreatorController+Ext_Collection.swift */,
 				639407D72A77BFB6007D6301 /* dagrgeColorManger.swift */,
@@ -1382,6 +1572,7 @@
 			isa = PBXGroup;
 			children = (
 				F420A78C2A0283940098B849 /* Summer Time 16 */,
+				00233FE82C5AAE31001A6906 /* Localizable */,
 				D8C0414E8FC2E64EF9916D5E /* Frameworks */,
 				6F6F55A72A4ED1090093F556 /* NotificationService */,
 				F420A78B2A0283940098B849 /* Products */,
@@ -1420,8 +1611,8 @@
 				4269ECCD2B4C091100018B0F /* BaseItemsListController */,
 				F438313F2A1CF0DD009B850C /* Views */,
 				42D58EB22B5EB2DB00FD0137 /* Summer Time 16Release.entitlements */,
+				30069D4C2C357FEE002CAA20 /* BIn */,
 				F4DB05DD2A02968D00E4C43D /* Resources */,
-				03435CC82B04C91B00423598 /* Localizable.strings */,
 			);
 			path = "Summer Time 16";
 			sourceTree = "<group>";
@@ -1465,6 +1656,7 @@
 				038360BE2AEFA35200751797 /* qwefwString+CaseInsesetive.swift */,
 				03435CC92B04F6A200423598 /* wefUIColor+Equatable.swift */,
 				424EF6BA2B47191700DB719F /* qweffUIView+Extension.swift */,
+				30069D482C347B89002CAA20 /* Ex+UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1563,6 +1755,8 @@
 				03AFFD362AD7F3F7002A131D /* Seed Tab */,
 				4269ECCA2B4C08EF00018B0F /* Mods Tab */,
 				422C6D452B50226A00453C6A /* Items Tab */,
+				30069D4F2C359C12002CAA20 /* SkinEditor */,
+				F4916C762A0B88240090E9B6 /* Addon Creator */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -1573,7 +1767,6 @@
 				F4DB05D32A0295F300E4C43D /* CreateTabViewController_vatr.swift */,
 				F4DB05D42A0295F300E4C43D /* CreateTabViewController_vatr.xib */,
 				63A5DFD82A334A360037D65B /* SkinsCreator */,
-				F4916C762A0B88240090E9B6 /* Addon Creator */,
 				42B18CC02B446A1D000A6777 /* CollectionViewItemsPreview_vatr.xib */,
 				42B18CC22B446ABB000A6777 /* CollectionViewItemsPreview_vatr.swift */,
 			);
@@ -1667,7 +1860,6 @@
 			);
 			name = "Summer Time 16";
 			packageProductDependencies = (
-				63E876722A2A0C6B00B486B1 /* Realm */,
 				63E876742A2A0C6B00B486B1 /* RealmSwift */,
 				6F2064F52A4D9CBF000B25F0 /* SwiftyDropbox */,
 				6FA9FCC32A4ECD6A001A1CD6 /* FirebaseAnalytics */,
@@ -1709,7 +1901,7 @@
 					};
 					F420A7892A0283940098B849 = {
 						CreatedOnToolsVersion = 14.2;
-						LastSwiftMigration = 1430;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -1805,35 +1997,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00233FF42C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FFD2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				C0236D872A4303E800AE1FD3 /* BrashSizeView_vatr.xib in Resources */,
 				427A4BDD2B8376EA007F4D86 /* stiv_v5.scn in Resources */,
 				D709705F2A78206B0044F81F /* ColorCollectionCell_vatr.xib in Resources */,
 				03A8F76B2ADED23E00B87A4A /* ServerTableViewCell_vatr.xib in Resources */,
+				00233FF02C5AAE31001A6906 /* Localizable.strings in Resources */,
 				4280A3402B3DFB0500EA9544 /* Kufam-SemiBold.ttf in Resources */,
 				039BF14D2AA227BE0065EF48 /* ManualInstructionViewController_vatr.xib in Resources */,
 				6F1CADF22A667C4900735EAB /* AddonCollectionViewCell_vatr.xib in Resources */,
+				002340082C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340102C5AAE31001A6906 /* Localizable.strings in Resources */,
 				5C8291592C2DF73900D8A39B /* Rubik-Medium.ttf in Resources */,
 				63F971D62A3721EB005D102E /* BodyPartPickerViewController_vatr.xib in Resources */,
 				F41A099B2A1E6A7100ECF94C /* HandsBodyPartViewController_vatr.xib in Resources */,
+				002340022C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FFF2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FEA2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340092C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FF72C5AAE31001A6906 /* Localizable.strings in Resources */,
 				03A8F7662ADEA80F00B87A4A /* SeedTableViewCell_vatr.xib in Resources */,
 				422C6D472B50255200453C6A /* NavigationBarContainer_vatr.xib in Resources */,
+				00233FFC2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				0304BBFA2A9798EB00D75017 /* SearchSuggestionCell_vatr.xib in Resources */,
 				5C8291552C2DF73900D8A39B /* Rubik-Italic.ttf in Resources */,
+				002340122C5AAE31001A6906 /* Localizable.strings in Resources */,
 				4234945B2B3F5F4400146B15 /* SsvedAddonCollectionCell_vatr.xib in Resources */,
+				30069D472C34701C002CAA20 /* NewSkinCreatorCell.xib in Resources */,
+				00233FF22C5AAE31001A6906 /* Localizable.strings in Resources */,
 				5C8291532C2DF73900D8A39B /* Rubik-Bold.ttf in Resources */,
 				5C82915A2C2DF73900D8A39B /* Rubik-MediumItalic.ttf in Resources */,
+				00233FF62C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F41A09A72A1E6ABD00ECF94C /* TorsoBodyPartViewController_vatr.xib in Resources */,
+				00233FFB2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				4280A3412B3DFB7C00EA9544 /* Kufam-Medium.ttf in Resources */,
 				D70970362A77F6F80044F81F /* SkinCreatorImportViewController_vatr.xib in Resources */,
 				42F494622B5AB73400328270 /* GoogleService-Info.plist in Resources */,
+				0023400D2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F4DB05D62A0295F300E4C43D /* CreateTabViewController_vatr.xib in Resources */,
+				00233FEC2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				03AFFD1E2AD7D68D002A131D /* CreateNewItemCollectionViewCell_vatr.xib in Resources */,
 				03A54F8F2AD597A800F10AA5 /* SkinCreatorMainVC_vatr.xib in Resources */,
+				00233FFE2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F428B9252A127BE5005D575F /* FilterTableViewCell_vatr.xib in Resources */,
 				639407F52A780ABE007D6301 /* Color3DCollectionCell_vatr.xib in Resources */,
 				63BCE0E52AE009A7005B1608 /* SettingsViewController_vatr.xib in Resources */,
 				038360C32AEFD83C00751797 /* SeedDetailsViewController_vatr.xib in Resources */,
+				0023400F2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				033847A12A9CB41700A55021 /* DownloadContnetViewController_vatr.xib in Resources */,
+				0023400C2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				30069D572C359E5D002CAA20 /* SkinEditorVC.xib in Resources */,
 				F4DB05D12A02959000E4C43D /* TabBarViewController_vatr.xib in Resources */,
 				5C8291522C2DF73900D8A39B /* Rubik-Light.ttf in Resources */,
 				F41F6D0F2A21078500F72851 /* SkinEditorViewController_vatr.xib in Resources */,
@@ -1846,14 +2060,23 @@
 				4280A3422B3DFB7E00EA9544 /* Kufam-Regular.ttf in Resources */,
 				C0EC65732A44488900C5B8ED /* SmallModelView_vatr.xib in Resources */,
 				F438AA272A14FA05007469E7 /* ColorPickerViewController_vatr.xib in Resources */,
+				00233FEF2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				0023400E2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				5C8291572C2DF73900D8A39B /* Rubik-BlackItalic.ttf in Resources */,
 				F4ADA93A2A0A6A46009A2756 /* SkinCreatorViewController_vatr.xib in Resources */,
+				00233FF52C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340012C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340072C5AAE31001A6906 /* Localizable.strings in Resources */,
 				5C82915B2C2DF73900D8A39B /* Rubik-Regular.ttf in Resources */,
 				42197FF92B56ADA5008D3C77 /* ItemsTabViewController_vatr.xib in Resources */,
 				42B18CC12B446A1D000A6777 /* CollectionViewItemsPreview_vatr.xib in Resources */,
 				C0398D912A54309C00A48138 /* SaveAlertView_vatr.xib in Resources */,
+				002340112C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F42CEC5F2A09228200A6D2D6 /* ContentViewController_vatr.xib in Resources */,
+				00233FF82C5AAE31001A6906 /* Localizable.strings in Resources */,
 				03AFFD412AD7F464002A131D /* ServersTabViewController_vatr.xib in Resources */,
+				002340062C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340002C5AAE31001A6906 /* Localizable.strings in Resources */,
 				6342B1622AA1DA280087D710 /* AddonEditor3DViewController_vatr.xib in Resources */,
 				F4DB05DC2A02962800E4C43D /* ContentTabViewController_vatr.xib in Resources */,
 				F41F6D072A20FC6B00F72851 /* ListTableViewCell_vatr.xib in Resources */,
@@ -1862,17 +2085,32 @@
 				F4AA287F2A1BB04D001B9F0A /* Skin3DTestViewController_vatr.xib in Resources */,
 				03A8F7612ADEA2C800B87A4A /* SeedTabViewController_vatr.xib in Resources */,
 				63EE81AD2A581362005BE8E7 /* AddonEditorViewController_vatr.xib in Resources */,
+				00233FED2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340042C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F41A099F2A1E6A8400ECF94C /* LegsBodyPartViewControllerViewController_vatr.xib in Resources */,
+				00233FEE2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				0023400B2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				5C8291562C2DF73900D8A39B /* Rubik-Black.ttf in Resources */,
+				00233FE92C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F41F6D132A210B7D00F72851 /* SkinEditorCollectionViewCell_vatr.xib in Resources */,
 				F4DE46772A03B157001DFB1B /* ContentCollectionViewCell_vatr.xib in Resources */,
+				002340052C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F420A7972A0283960098B849 /* Assets.xcassets in Resources */,
+				002340032C5AAE31001A6906 /* Localizable.strings in Resources */,
+				3059A2C32C38FFDC00C4C6FF /* BtnCollectionCell.xib in Resources */,
+				00233FF32C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F41F6D032A20F73700F72851 /* AddonOptionsViewController_vatr.xib in Resources */,
+				00233FF12C5AAE31001A6906 /* Localizable.strings in Resources */,
 				0398B47D2AC1F33600810B29 /* AddonCategoryOptionsViewController_vatr.xib in Resources */,
 				F41A09A32A1E6A8F00ECF94C /* HeadBodyPartViewController_vatr.xib in Resources */,
 				6F1CADED2A667C3200735EAB /* AddonEditorSelectorViewController_vatr.xib in Resources */,
 				4280A3432B3DFB8200EA9544 /* Kufam-Bold.ttf in Resources */,
+				00233FF92C5AAE31001A6906 /* Localizable.strings in Resources */,
+				002340132C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F4ADA9352A0A391A009A2756 /* PopUpViewController_vatr.xib in Resources */,
+				0023400A2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FFA2C5AAE31001A6906 /* Localizable.strings in Resources */,
+				00233FEB2C5AAE31001A6906 /* Localizable.strings in Resources */,
 				F41F6D0B2A20FDD000F72851 /* AddonsOptionsTableViewCell_vatr.xib in Resources */,
 				422C6D4E2B502FCA00453C6A /* wertBaseItemTabBarCell.xib in Resources */,
 			);
@@ -1967,6 +2205,7 @@
 				424EF6B92B4707FB00DB719F /* trjhnShadowLayer.swift in Sources */,
 				F43831412A1CF0FB009B850C /* knbvcSearchBarView.swift in Sources */,
 				F438AA192A14BB0D007469E7 /* BrightnessSaturationView_gfdgd.swift in Sources */,
+				30181F552C3D9C6E00D46A81 /* ColorsVC.swift in Sources */,
 				63945E172A8D06970021BA28 /* omnbSceneLogicModelAddon3D.swift in Sources */,
 				F40415E42A126E6B00066473 /* Command_vatr.swift in Sources */,
 				000451CE2C24BB5E001CC1C0 /* NoInternetConnectionView.swift in Sources */,
@@ -1989,6 +2228,7 @@
 				42197FFF2B56EC97008D3C77 /* ModsTabViewController_vatr.swift in Sources */,
 				F438AA1B2A14BB0D007469E7 /* gfdfUIColor+HSBAComponents.swift in Sources */,
 				639407DA2A77D097007D6301 /* rffrUIColor+Ext_encoder.swift in Sources */,
+				30069D562C359E5D002CAA20 /* SkinEditorVC.swift in Sources */,
 				42095E722B9A5967008046B2 /* rtrg_ServicesManager.swift in Sources */,
 				F41A09962A1E442400ECF94C /* ferferfAddonCreatorViewController + UICollectionView.swift in Sources */,
 				635281942A589ECA00F3EB23 /* dtthgjRealmServiceProviding.swift in Sources */,
@@ -2019,6 +2259,7 @@
 				D7310D722A842F810020D42F /* bbgiImage+Trim.swift in Sources */,
 				639407F02A780864007D6301 /* afrfwColorManager3D.swift in Sources */,
 				D70970122A77B1DA0044F81F /* uihkTintedTextField.swift in Sources */,
+				3059A2C52C39B61200C4C6FF /* CustomAlert.swift in Sources */,
 				6F1CADF32A667C4900735EAB /* AddonCollectionViewCell_vatr.swift in Sources */,
 				F40415DC2A126CD700066473 /* ewdwfConstants.swift in Sources */,
 				000451D12C24BB9D001CC1C0 /* StripedProgressBar.swift in Sources */,
@@ -2031,6 +2272,7 @@
 				639407F72A780C38007D6301 /* reggrqSkin3DTestViewController+Ext_Collection.swift in Sources */,
 				D72E49C72A73C6B20031AEBE /* werfrfImageCacheManager.swift in Sources */,
 				42F2731E2B55B91000611CE0 /* weModsRealmeSession.swift in Sources */,
+				3059A2C22C38FFDC00C4C6FF /* BtnCollectionCell.swift in Sources */,
 				633030422A348FB400CDCD4A /* eafgreSkinCreatedModel.swift in Sources */,
 				4296EB9B2B4D90C3004BC699 /* regergShadowView.swift in Sources */,
 				42B18CC32B446ABB000A6777 /* CollectionViewItemsPreview_vatr.swift in Sources */,
@@ -2047,11 +2289,13 @@
 				635281932A589ECA00F3EB23 /* fgtgRealmService.swift in Sources */,
 				F40415E82A126E9500066473 /* regwDrawCommand.swift in Sources */,
 				4269ECC92B4C08E800018B0F /* vhhjModsTabBarViewController.swift in Sources */,
+				30069D462C34701C002CAA20 /* NewSkinCreatorCell.swift in Sources */,
 				D72306E42A79310B0000F6B3 /* referfUIColor+Resource.swift in Sources */,
 				F4DB05E42A02ACD100E4C43D /* rgegTabBarWithCorners.swift in Sources */,
 				1C2983C82A5EADAA00E936BA /* egreAddonsOptionsCellWithTextField.swift in Sources */,
 				F41F6D122A210B7D00F72851 /* SkinEditorCollectionViewCell_vatr.swift in Sources */,
 				6352819D2A589FE000F3EB23 /* iojpojMainAddonCreatorModel.swift in Sources */,
+				30069D492C347B89002CAA20 /* Ex+UIView.swift in Sources */,
 				F40415EC2A126EFC00066473 /* hhyhtTool.swift in Sources */,
 				F4ADA9342A0A3919009A2756 /* PopUpViewController_vatr.swift in Sources */,
 				42AF79BA2B6A63490045C40B /* Configurations_ferf.swift in Sources */,
@@ -2110,10 +2354,346 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03435CC82B04C91B00423598 /* Localizable.strings */ = {
+		00233F932C5AAE31001A6906 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03435CC72B04C91B00423598 /* en */,
+				00233F922C5AAE31001A6906 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F952C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F942C5AAE31001A6906 /* he */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F972C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F962C5AAE31001A6906 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F992C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F982C5AAE31001A6906 /* el */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F9B2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F9A2C5AAE31001A6906 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F9D2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F9C2C5AAE31001A6906 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233F9F2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233F9E2C5AAE31001A6906 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FA12C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FA02C5AAE31001A6906 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FA32C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FA22C5AAE31001A6906 /* nb */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FA52C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FA42C5AAE31001A6906 /* en-GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FA72C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FA62C5AAE31001A6906 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FA92C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FA82C5AAE31001A6906 /* sl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FAB2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FAA2C5AAE31001A6906 /* da */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FAD2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FAC2C5AAE31001A6906 /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FAF2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FAE2C5AAE31001A6906 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FB12C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FB02C5AAE31001A6906 /* sk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FB32C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FB22C5AAE31001A6906 /* fr-CA */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FB52C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FB42C5AAE31001A6906 /* sr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FB72C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FB62C5AAE31001A6906 /* ms */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FB92C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FB82C5AAE31001A6906 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FBB2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FBA2C5AAE31001A6906 /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FBD2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FBC2C5AAE31001A6906 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FBF2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FBE2C5AAE31001A6906 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FC12C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FC02C5AAE31001A6906 /* hu */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FC32C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FC22C5AAE31001A6906 /* en-AU */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FC52C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FC42C5AAE31001A6906 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FC72C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FC62C5AAE31001A6906 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FC92C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FC82C5AAE31001A6906 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FCB2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FCA2C5AAE31001A6906 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FCD2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FCC2C5AAE31001A6906 /* lv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FCF2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FCE2C5AAE31001A6906 /* lt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FD12C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FD02C5AAE31001A6906 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FD32C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FD22C5AAE31001A6906 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FD52C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FD42C5AAE31001A6906 /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FD72C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FD62C5AAE31001A6906 /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FD92C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FD82C5AAE31001A6906 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FDB2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FDA2C5AAE31001A6906 /* th */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FDD2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FDC2C5AAE31001A6906 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FDF2C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FDE2C5AAE31001A6906 /* ro */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FE12C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FE02C5AAE31001A6906 /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FE32C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FE22C5AAE31001A6906 /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FE52C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FE42C5AAE31001A6906 /* ca */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00233FE72C5AAE31001A6906 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00233FE62C5AAE31001A6906 /* en-IN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2134,7 +2714,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4LMH8QQN35;
+				DEVELOPMENT_TEAM = Q62DRQKB69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
@@ -2160,7 +2740,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4LMH8QQN35;
+				DEVELOPMENT_TEAM = Q62DRQKB69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
@@ -2306,7 +2886,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8V8RMZC8NU;
+				DEVELOPMENT_TEAM = Q62DRQKB69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Summer Time 16/Resources/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -2582,11 +3162,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4239CF432B5EC2D30071730E /* XCRemoteSwiftPackageReference "SwiftyGif" */;
 			productName = SwiftyGif;
-		};
-		63E876722A2A0C6B00B486B1 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 63E876712A2A0C6B00B486B1 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
 		};
 		63E876742A2A0C6B00B486B1 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;

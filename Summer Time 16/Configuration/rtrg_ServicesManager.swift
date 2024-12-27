@@ -1,8 +1,8 @@
 import Foundation
 import UIKit
 import Adjust
-import Pushwoosh
-import AppTrackingTransparency
+//import Pushwoosh
+
 import AdSupport
 
 //
@@ -47,23 +47,23 @@ class ThirdPartyServicesManager_vatr {
         Adjust.appDidLaunch(adjustConfig)
     }
     
-    func initializePushwoosh_vatr(delegate: PWMessagingDelegate) {
+//    func initializePushwoosh_vatr(delegate: PWMessagingDelegate) {
         //
-        func isPalierndrome_vatr(_ str: String) -> Bool {
-            let reversed = String(str.reversed())
-            return str == reversed
-        }
+//        func isPalierndrome_vatr(_ str: String) -> Bool {
+//            let reversed = String(str.reversed())
+//            return str == reversed
+//        }
 
 
         //
         //set custom delegate for push handling, in our case AppDelegate
-        Pushwoosh.sharedInstance().delegate = delegate;
-        PushNotificationManager.initialize(withAppCode: Configurations_ferf.pushwooshToken, appName: Configurations_ferf.pushwooshAppName)
-        PWInAppManager.shared().resetBusinessCasesFrequencyCapping()
-        PWGDPRManager.shared().showGDPRDeletionUI()
-        Pushwoosh.sharedInstance().registerForPushNotifications()
-        UIApplication.shared.applicationIconBadgeNumber = 0
-    }
+//        Pushwoosh.sharedInstance().delegate = delegate;
+//        PushNotificationManager.initialize(withAppCode: Configurations_ferf.pushwooshToken, appName: Configurations_ferf.pushwooshAppName)
+//        PWInAppManager.shared().resetBusinessCasesFrequencyCapping()
+//        PWGDPRManager.shared().showGDPRDeletionUI()
+//        Pushwoosh.sharedInstance().registerForPushNotifications()
+//        UIApplication.shared.applicationIconBadgeNumber = 0
+//    }
     
     
   
@@ -77,28 +77,28 @@ class ThirdPartyServicesManager_vatr {
         }
 
         //
-            if #available(iOS 14, *) {
-                ATTrackingManager.requestTrackingAuthorization { status in
-                    switch status {
-                    case .authorized:
-                        print("Authorized")
-                        let idfa = ASIdentifierManager.shared().advertisingIdentifier
-                        print("Пользователь разрешил доступ. IDFA: ", idfa)
-                        let authorizationStatus = Adjust.appTrackingAuthorizationStatus()
-                        Adjust.updateConversionValue(Int(authorizationStatus))
-                        Adjust.checkForNewAttStatus()
-                        print(ASIdentifierManager.shared().advertisingIdentifier)
-                    case .denied:
-                        print("Denied")
-                    case .notDetermined:
-                        print("Not Determined")
-                    case .restricted:
-                        print("Restricted")
-                    @unknown default:
-                        print("Unknown")
-                    }
-                }
-        }
+//            if #available(iOS 14, *) {
+//                ATTrackingManager.requestTrackingAuthorization { status in
+//                    switch status {
+//                    case .authorized:
+//                        print("Authorized")
+//                        let idfa = ASIdentifierManager.shared().advertisingIdentifier
+//                        print("Пользователь разрешил доступ. IDFA: ", idfa)
+//                        let authorizationStatus = Adjust.appTrackingAuthorizationStatus()
+//                        Adjust.updateConversionValue(Int(authorizationStatus))
+//                        Adjust.checkForNewAttStatus()
+//                        print(ASIdentifierManager.shared().advertisingIdentifier)
+//                    case .denied:
+//                        print("Denied")
+//                    case .notDetermined:
+//                        print("Not Determined")
+//                    case .restricted:
+//                        print("Restricted")
+//                    @unknown default:
+//                        print("Unknown")
+//                    }
+//                }
+//        }
     }
 }
 

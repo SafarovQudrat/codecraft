@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,29 +17,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="157" height="193"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="WRT-m7-eR3" userLabel="Rounded Background View">
+                    <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="WRT-m7-eR3" userLabel="Rounded Background View" customClass="GradientView" customModule="Summer_Time_16" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="157" height="193"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzW-pf-GkV">
-                                <rect key="frame" x="0.0" y="0.0" width="157" height="193"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-LT-NF8" userLabel="Content Image View">
                                 <rect key="frame" x="2" y="2" width="153" height="189"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="16"/>
+                                        <integer key="value" value="24"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addons_icon_button_vatr" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-QT-yx6" userLabel="Category Icon">
-                                <rect key="frame" x="8" y="10" width="30.5" height="30.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_cell" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-QT-yx6" userLabel="Category Icon">
+                                <rect key="frame" x="12" y="10" width="32" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LHa-Tb-6AS"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30.670000000000002" id="WDM-XF-b3H"/>
+                                    <constraint firstAttribute="width" constant="32" id="hBN-ll-AN4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30.670000000000002" id="pTr-Cq-IA1"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new Instance Icon_vatr" translatesAutoresizingMaskIntoConstraints="NO" id="vRH-Ol-ewJ" userLabel="New Icon">
                                 <rect key="frame" x="98" y="10" width="51" height="25"/>
@@ -69,25 +72,26 @@
                             <constraint firstAttribute="bottom" secondItem="Qqk-LT-NF8" secondAttribute="bottom" constant="2" id="62j-DQ-gOd"/>
                             <constraint firstAttribute="trailing" secondItem="Qqk-LT-NF8" secondAttribute="trailing" constant="2" id="ByE-HJ-8fw"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="centerX" secondItem="Gjq-Ga-L9I" secondAttribute="centerX" id="Htn-Tz-t7h"/>
-                            <constraint firstItem="RzW-pf-GkV" firstAttribute="top" secondItem="WRT-m7-eR3" secondAttribute="top" id="I0y-Wi-MtC"/>
                             <constraint firstAttribute="bottom" secondItem="Gjq-Ga-L9I" secondAttribute="bottom" constant="13" id="LTr-Pj-b8f"/>
-                            <constraint firstItem="RLI-QT-yx6" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" constant="8" id="MW6-jS-tDa"/>
+                            <constraint firstItem="RLI-QT-yx6" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" constant="12" id="MW6-jS-tDa"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="centerY" secondItem="WRT-m7-eR3" secondAttribute="centerY" id="NBg-tt-SJX"/>
                             <constraint firstAttribute="bottom" secondItem="Qqk-LT-NF8" secondAttribute="bottom" constant="2" id="T8A-E0-ke1"/>
-                            <constraint firstAttribute="trailing" secondItem="RzW-pf-GkV" secondAttribute="trailing" id="TAW-ge-mB8"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" constant="2" id="UET-3J-mlb"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="top" secondItem="WRT-m7-eR3" secondAttribute="top" constant="2" id="Xnh-d6-K7c"/>
                             <constraint firstItem="Gjq-Ga-L9I" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" constant="8" id="an1-x7-B8j"/>
                             <constraint firstAttribute="trailing" secondItem="Gjq-Ga-L9I" secondAttribute="trailing" constant="8" id="eDR-be-BIM"/>
                             <constraint firstItem="RLI-QT-yx6" firstAttribute="top" secondItem="WRT-m7-eR3" secondAttribute="top" constant="10" id="edz-q7-zyg"/>
-                            <constraint firstAttribute="bottom" secondItem="RzW-pf-GkV" secondAttribute="bottom" id="faC-zl-nmf"/>
-                            <constraint firstItem="RzW-pf-GkV" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" id="lgX-G1-hyH"/>
                             <constraint firstItem="vRH-Ol-ewJ" firstAttribute="trailing" secondItem="Gjq-Ga-L9I" secondAttribute="trailing" id="nHZ-lR-16k"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="leading" secondItem="WRT-m7-eR3" secondAttribute="leading" constant="2" id="qTC-Vy-sep"/>
                             <constraint firstItem="Qqk-LT-NF8" firstAttribute="top" secondItem="WRT-m7-eR3" secondAttribute="top" constant="2" id="qub-3A-xlC"/>
                             <constraint firstAttribute="trailing" secondItem="Qqk-LT-NF8" secondAttribute="trailing" constant="2" id="tEb-Ml-yMq"/>
                             <constraint firstItem="RLI-QT-yx6" firstAttribute="top" secondItem="WRT-m7-eR3" secondAttribute="top" constant="10" id="tud-ir-Ppp"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -104,17 +108,13 @@
                 <outlet property="contentImageView" destination="Qqk-LT-NF8" id="nBW-Pi-vll"/>
                 <outlet property="headerLabel" destination="Gjq-Ga-L9I" id="Hld-V3-JYU"/>
                 <outlet property="newIcon" destination="vRH-Ol-ewJ" id="ezB-vg-XK6"/>
-                <outlet property="patnisV" destination="RzW-pf-GkV" id="sko-r4-wBE"/>
                 <outlet property="roundedBackgroundView" destination="WRT-m7-eR3" id="r1I-3g-R9Q"/>
             </connections>
             <point key="canvasLocation" x="228.22265624999997" y="-39.311859443631036"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="addons_icon_button_vatr" width="23" height="23"/>
+        <image name="like_cell" width="64" height="64"/>
         <image name="new Instance Icon_vatr" width="40" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

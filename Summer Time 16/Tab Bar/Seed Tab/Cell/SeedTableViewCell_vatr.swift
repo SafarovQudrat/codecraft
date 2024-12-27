@@ -144,7 +144,7 @@ class SeedTableViewCell_vatr: UICollectionViewCell {
         var cpvatr_kvmnxnfw: Double {
             return 31.532407165168173
         }
-        nameLabel.text = "New"
+        nameLabel.text = NSLocalizedString("new", comment: "")
     }
     
     func configWithImageData_wew(seed: Seed_vatr) {

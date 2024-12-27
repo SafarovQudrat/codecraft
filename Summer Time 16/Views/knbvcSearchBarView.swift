@@ -11,7 +11,21 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     
     var placeholderTextColor = #colorLiteral(red: 0.634565711, green: 0.7767372727, blue: 0.9022807479, alpha: 1)
     
-    var containerView: UIView = GradientView_Wert()
+    var containerView: UIView = {
+        let v = UIView()
+        v.backgroundColor = UIColor(named: "#0A68EF")
+        v.clipsToBounds = true
+        v.layer.cornerRadius = 12
+        return v
+    }()
+    
+    var backView: UIView = {
+        let v = UIView()
+        v.backgroundColor = UIColor(named: "#0A68EF")
+        v.clipsToBounds = true
+//        v.layer.cornerRadius = 12
+        return v
+    }()
     
     private lazy var resetButton: UIButton = {
         let button = UIButton()
@@ -36,7 +50,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         textField.setLeftPaddingPoints_vatr(40)
         
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Search",
+            string: NSLocalizedString("search", comment: ""),
             attributes: [NSAttributedString.Key.foregroundColor: placeholderTextColor]
         )
         
@@ -71,10 +85,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     }
     
     override func layoutSubviews() {
-        var cpvatr_kzrypbnk: Int {
-            return 29
-        }
-       
         super.layoutSubviews()
 //        searchTextField.configureShadow_vatr(cornerRadius: searchTextField.frame.height / 2)
         
@@ -88,9 +98,6 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     }
     
     func updateCorners_vatr2(isAll: Bool = false) {
-        var cpvatr_tzvshihx: Int {
-            return 56
-        }
        
         var corners: CACornerMask = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
@@ -102,9 +109,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     }
     
     @objc func buttonCloseTapped_vatr443() {
-        var cpvatr_yqrzydlv: Int {
-            return 91
-        }
+       
         searchTextField.resignFirstResponder()
         
         buttonTapAction?()
@@ -157,9 +162,7 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
     }
     
     private func setupView_vatr2() {
-        var cpvatr_wmqjdqly: Int {
-            return 92
-        }
+        backgroundColor = UIColor(named: "#0A68EF")
         addSubview(containerView)
         containerView.addSubview(searchTextField)
         searchTextField.addSubview(resetButton)
@@ -170,28 +173,39 @@ class SearchBarView_vatr: UIView, UITextFieldDelegate {
         }
         
         searchIcon.snp.makeConstraints { make in
-            make.left.equalTo(containerView.snp.left).offset(20)
+            make.left.equalTo(containerView.snp.left).inset(10)
             make.height.width.equalTo(18)
             make.centerY.equalToSuperview()
         }
         
+//        resetButton.snp.makeConstraints { make in
+//            make.right.equalTo(containerView.snp.left).offset(20)
+//            make.height.width.equalTo(18)
+//            make.centerY.equalToSuperview()
+//        }
+//        
+//        searchTextField.snp.makeConstraints { make in
+//            make.height.equalTo(40)
+//            make.left.equalTo(2)
+//            make.right.equalTo(resetButton.snp_leftMargin).offset(6)
+//            make.top.bottom.equalToSuperview().inset(2)
+//        }
+        
         searchTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
         searchTextField.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 2).isActive = true
-        searchTextField.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -2).isActive = true
+        searchTextField.trailingAnchor.constraint(equalTo: resetButton.trailingAnchor, constant: -2).isActive = true
         searchTextField.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 2).isActive = true
         searchTextField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -2).isActive = true
         
 //        searchTextField.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         
-        resetButton.trailingAnchor.constraint(equalTo: searchTextField.trailingAnchor, constant: -12).isActive = true
+        resetButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -12).isActive = true
         resetButton.topAnchor.constraint(equalTo: searchTextField.topAnchor, constant: 4).isActive = true
         resetButton.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 4).isActive = true
         resetButton.widthAnchor.constraint(equalToConstant: 20).isActive = true
 
     }
-    var cpvatr_aihnpspk: Double {
-        return 52.37425636393376
-    }
+   
 }
 //import UIKit
 
@@ -207,7 +221,7 @@ class CustomSearchBar: UIView {
     
     let textField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Search"
+        textField.placeholder = NSLocalizedString("search", comment: "") 
         textField.textColor = .white
         textField.borderStyle = .none
         textField.translatesAutoresizingMaskIntoConstraints = false

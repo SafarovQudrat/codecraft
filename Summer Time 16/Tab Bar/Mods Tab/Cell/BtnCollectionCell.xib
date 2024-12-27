@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BtnCollectionCell" customModule="Summer_Time_16" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s50-BA-yKo">
+                        <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7a-4K-Pc6">
+                                <rect key="frame" x="107" y="18" width="15" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXm-Kh-CY5">
+                                <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bWL-QO-kw8">
+                                    <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="Hh1-iR-iQa">
+                                <rect key="frame" x="207" y="-2" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="4w5-4L-MRn"/>
+                                    <constraint firstAttribute="height" constant="24" id="NP8-sV-v2Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sXm-Kh-CY5" secondAttribute="trailing" id="Kp5-3P-pdZ"/>
+                            <constraint firstItem="Hh1-iR-iQa" firstAttribute="top" secondItem="s50-BA-yKo" secondAttribute="top" constant="-2" id="LU8-HT-JKw"/>
+                            <constraint firstItem="x7a-4K-Pc6" firstAttribute="centerX" secondItem="s50-BA-yKo" secondAttribute="centerX" id="P5a-CC-QK8"/>
+                            <constraint firstItem="sXm-Kh-CY5" firstAttribute="leading" secondItem="s50-BA-yKo" secondAttribute="leading" id="Vbg-D2-hgo"/>
+                            <constraint firstAttribute="bottom" secondItem="sXm-Kh-CY5" secondAttribute="bottom" id="aUn-zo-Acp"/>
+                            <constraint firstItem="x7a-4K-Pc6" firstAttribute="centerY" secondItem="s50-BA-yKo" secondAttribute="centerY" id="kpZ-r9-2Wf"/>
+                            <constraint firstAttribute="trailing" secondItem="Hh1-iR-iQa" secondAttribute="trailing" constant="-2" id="kz6-ZM-UVq"/>
+                            <constraint firstItem="sXm-Kh-CY5" firstAttribute="top" secondItem="s50-BA-yKo" secondAttribute="top" id="ueP-jv-Pcj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="s50-BA-yKo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8gx-CM-FbS"/>
+                <constraint firstItem="s50-BA-yKo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cZL-qO-gc4"/>
+                <constraint firstAttribute="trailing" secondItem="s50-BA-yKo" secondAttribute="trailing" id="huJ-QH-HSV"/>
+                <constraint firstAttribute="bottom" secondItem="s50-BA-yKo" secondAttribute="bottom" id="iRP-Dd-kWr"/>
+            </constraints>
+            <size key="customSize" width="229" height="50"/>
+            <connections>
+                <outlet property="backV" destination="s50-BA-yKo" id="nVM-vE-q3X"/>
+                <outlet property="blurView" destination="sXm-Kh-CY5" id="mau-fF-NAD"/>
+                <outlet property="lockImageV" destination="Hh1-iR-iQa" id="6Pp-EQ-nac"/>
+                <outlet property="textLbl" destination="x7a-4K-Pc6" id="xNo-jE-vNV"/>
+            </connections>
+            <point key="canvasLocation" x="164.12213740458014" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lock" width="28.5" height="30"/>
+    </resources>
+</document>

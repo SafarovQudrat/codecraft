@@ -3,8 +3,8 @@
 import Foundation
 import UIKit
 import Adjust
-import Pushwoosh
-import AppTrackingTransparency
+//import Pushwoosh
+
 import AdSupport
 
 class ThirdPartyServicesManager_vatr {
@@ -39,26 +39,15 @@ func ACsvBZTnHS() {
     }
     
     func initializePushwoosh(delegate: PWMessagingDelegate) {
-var cpvatr_uwtnmflj: Int {
-    return 85
-}
-func hEhkYUg() {
-        var RwIWMFBi: Int = 7
-        if RwIWMFBi > 7 {
-            if RwIWMFBi < 7 {
-                RwIWMFBi = 7
-    }
 
-  }
-}
   
         //set custom delegate for push handling, in our case AppDelegate
-        Pushwoosh.sharedInstance().delegate = delegate;
-        PushNotificationManager.initialize(withAppCode: Configurations.pushwooshToken, appName: Configurations.pushwooshAppName)
-        PWInAppManager.shared().resetBusinessCasesFrequencyCapping()
-        PWGDPRManager.shared().showGDPRDeletionUI()
-        Pushwoosh.sharedInstance().registerForPushNotifications()
-        UIApplication.shared.applicationIconBadgeNumber = 0
+//        Pushwoosh.sharedInstance().delegate = delegate;
+//        PushNotificationManager.initialize(withAppCode: Configurations.pushwooshToken, appName: Configurations.pushwooshAppName)
+//        PWInAppManager.shared().resetBusinessCasesFrequencyCapping()
+//        PWGDPRManager.shared().showGDPRDeletionUI()
+//        Pushwoosh.sharedInstance().registerForPushNotifications()
+//        UIApplication.shared.applicationIconBadgeNumber = 0
     }
     
     func makeATT() {

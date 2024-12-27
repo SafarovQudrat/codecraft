@@ -11,9 +11,15 @@ import Network
 
 class LoadingViewController: UIViewController {
     
+    private let backImage: UIImageView = {
+        let i = UIImageView(image: UIImage(named: "backImg"))
+        i.contentMode = .scaleAspectFill
+        return i
+    }()
+    
     private let loadingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Loading..."
+        label.text = NSLocalizedString("loading...", comment: "")
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return label
@@ -23,7 +29,7 @@ class LoadingViewController: UIViewController {
         let label = UILabel()
         label.text = "0%"
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        label.font = UIFont.systemFont(ofSize: 32, weight: .medium)
         return label
     }()
     
@@ -41,8 +47,8 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 1.0, alpha: 1.0)
-        
+        Gradient.setupGradient(view: view)
+        view.addSubview(backImage)
         view.addSubview(loadingLabel)
         view.addSubview(percentageLabel)
         view.addSubview(progressBar)
@@ -59,25 +65,33 @@ class LoadingViewController: UIViewController {
         percentageLabel.translatesAutoresizingMaskIntoConstraints = false
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-            loadingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loadingLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30),
-            
-            percentageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            percentageLabel.topAnchor.constraint(equalTo: loadingLabel.bottomAnchor, constant: 10),
-            
-            progressBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            progressBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            progressBar.topAnchor.constraint(equalTo: percentageLabel.bottomAnchor, constant: 20),
-            progressBar.heightAnchor.constraint(equalToConstant: 10)
-        ])
+        backImage.snp.makeConstraints { make in
+            make.left.right.top.bottom.equalToSuperview()
+        }
+        
+        progressBar.layer.cornerRadius = 6
+        progressBar.clipsToBounds = true
+        progressBar.snp.makeConstraints { make in
+            make.centerY.equalTo(view.snp_centerYWithinMargins)
+            make.centerX.equalTo(view.snp_centerXWithinMargins)
+            make.height.equalTo(12)
+            make.width.equalTo(300)
+        }
+        loadingLabel.snp.makeConstraints { make in
+            make.bottom.equalTo(progressBar.snp.top).offset(-30)
+            make.left.equalTo(progressBar.snp_leftMargin)
+        }
+        percentageLabel.snp.makeConstraints { make in
+            make.bottom.equalTo(progressBar.snp.top).offset(-30)
+            make.right.equalTo(progressBar.snp_rightMargin)
+        }
     }
     
     private func simulateLoading() {
         // Simulate loading with a timer
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
             if self.progress < 1.0 {
-                self.progress += 0.01
+                self.progress += 0.2
             } else {
                 timer.invalidate()
                 // Loading completed

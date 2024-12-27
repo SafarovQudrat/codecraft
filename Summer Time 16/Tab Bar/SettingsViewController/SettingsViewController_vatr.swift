@@ -18,6 +18,12 @@ class SettingsViewController_vatr: UIViewController {
     @IBOutlet weak var cachesizeLab: UILabel!
     @IBOutlet weak var doneView: UIView!
     
+    @IBOutlet weak var termsof: UILabel!
+    
+    @IBOutlet weak var privacyPolicy: UILabel!
+    
+    @IBOutlet weak var clearcache: UILabel!
+    
     lazy var alertViewContainer: UIView = {
         var view = UIView()
         view.frame = UIScreen.main.bounds
@@ -67,14 +73,12 @@ func BgdUkL() {
         backBtn.layer.cornerRadius = 8
         setupUI_vatr()
         setupActions_vatr()
-//        setupBackground_vatr()
-//        Gradient.setupGradient(view: view)
-//        Gradient.setupGradient(view: termsContaienr)
-//        Gradient.setupGradient(view: privacyContainer)
-//        Gradient.setupGradient(view: doneView)
-////        backBtn.backgroundColor = .green
-//        Gradient.setupGradient(view: backBtn)
         backBtn.bringSubviewToFront(backBtn.imageView!)
+        
+        vcTitleLab.text = NSLocalizedString("settings", comment: "")
+        termsof.text = NSLocalizedString("terms_of_Use", comment: "")
+        privacyPolicy.text = NSLocalizedString("privacy_Policy", comment: "")
+        clearcache.text = NSLocalizedString("clear_Cache", comment: "")
         
     }
 //    override func viewDidLayoutSubviews() {
@@ -123,15 +127,7 @@ func FSHSOCT() {
     //MARK: ConfigUI
     
     private func setupUI_vatr() {
-func dmNPrK() {
-        var vKCHD: Int = 5
-        if vKCHD > 5 {
-            if vKCHD < 5 {
-                vKCHD = 5
-    }
 
-  }
-}
   
         configClearCacheAlertUI_vatr()
         configCorners_vatr()
@@ -139,15 +135,7 @@ func dmNPrK() {
     }
 
     private func configCorners_vatr() {
-func RddfYsmB() {
-        var gUDJsUeMh: Int = 5
-        if gUDJsUeMh > 5 {
-            if gUDJsUeMh < 5 {
-                gUDJsUeMh = 5
-    }
 
-  }
-}
   
 //        termsContaienr.layer.cornerRadius = 32
 //        privacyContainer.layer.cornerRadius = 32
@@ -157,22 +145,14 @@ func RddfYsmB() {
     private var gradientLayer: CALayer! = nil
     override func viewDidLayoutSubviews() {
         
-func xCcfO() {
-        var UjyBkt: Int = 1
-        if UjyBkt > 1 {
-            if UjyBkt < 1 {
-                UjyBkt = 1
-    }
 
-  }
-}
   
             super.viewDidLayoutSubviews()
 //            gradientLayer.frame = view.bounds
         Gradient.setupGradient(view: view)
         Gradient.setupGradient(view: termsContaienr)
         Gradient.setupGradient(view: privacyContainer)
-        Gradient.setupGradient(view: doneView)
+        Gradient.setupButtonGradient(view: doneView)
 //        backBtn.backgroundColor = .green
         Gradient.setupGradient(view: backBtn)
         }
@@ -315,43 +295,18 @@ extension SettingsViewController_vatr {
 
     //unhiddenAlertContainer
     @objc func clearCacheContainerTapped_vatr(_ sender: UITapGestureRecognizer)  {
-func NNrEXkxp() {
-        var yAaJlJudaZ: Int = 6
-        if yAaJlJudaZ > 6 {
-            if yAaJlJudaZ < 6 {
-                yAaJlJudaZ = 6
-    }
 
-  }
-}
-  
         alertViewContainer.isHidden = true
     }
     
-    private func callClearCacheAlert_vatr() {
-func kozLmszjg() {
-        var zlQdA: Int = 1
-        if zlQdA > 1 {
-            if zlQdA < 1 {
-                zlQdA = 1
-    }
-
-  }
-}
-  
-        alertViewContainer.isHidden = false
-    }
+//    private func callClearCacheAlert_vatr() {
+//
+//  
+//        alertViewContainer.isHidden = false
+//    }
     
     private func configClearCacheAlertUI_vatr() {
-func muBeCWk() {
-        var CfkafnEWR: Int = 3
-        if CfkafnEWR > 3 {
-            if CfkafnEWR < 3 {
-                CfkafnEWR = 3
-    }
 
-  }
-}
   
         // Create the parent container view
         let containerView = UIView()
@@ -362,7 +317,7 @@ func muBeCWk() {
         
         // Create the label at the top
         let label = UILabel()
-        label.text = "CACHE CLEARED"
+        label.text = NSLocalizedString("cache_cleared", comment: "")
         label.font = UIFont(name: "Kufam-Medium", size: 18)
         label.textColor = .white
         label.textAlignment = .center

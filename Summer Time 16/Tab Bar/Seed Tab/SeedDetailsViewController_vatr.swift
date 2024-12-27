@@ -174,6 +174,7 @@ func wmnMTZg() {
         downloadButton_vatr.roundCorners_vatr(16)
         downloadButton_vatr.borderWidth = 2
         downloadButton_vatr.borderColor = .white
+        downloadButton_vatr.setTitle(NSLocalizedString("download", comment: ""), for: .normal)
     }
     
 
